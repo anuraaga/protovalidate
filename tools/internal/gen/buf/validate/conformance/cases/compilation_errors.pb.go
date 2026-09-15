@@ -19,10 +19,7 @@
 // source: buf/validate/conformance/cases/compilation_errors.proto
 
 // Every message in this file carries rules that are expected to fail
-// compilation. They are kept separate from the messages whose rules are
-// expected to compile so that the conformance harness can send them in a
-// dedicated FileDescriptorSet, allowing an implementation to eagerly compile
-// every descriptor it is handed in the primary set.
+// compilation.
 //
 // Do not add messages here whose rules are expected to compile, and do not
 // import this file from any other conformance case file.

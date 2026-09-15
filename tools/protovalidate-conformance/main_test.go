@@ -49,8 +49,7 @@ func TestProcessAllSuites(t *testing.T) {
 
 // TestCompilationErrorsAreIsolated asserts that only the compilation_errors
 // suite expects compilation errors, and that no descriptor it sends leaks into
-// another suite's file descriptor set. An implementation can therefore eagerly
-// compile the rules of every descriptor in the sets of all other suites.
+// another suite's file descriptor set.
 func TestCompilationErrorsAreIsolated(t *testing.T) {
 	t.Parallel()
 	failing := map[string]struct{}{}
