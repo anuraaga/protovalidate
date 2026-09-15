@@ -21,6 +21,7 @@ proto_library(
     srcs = [
         "bool.proto",
         "bytes.proto",
+        "compilation_errors.proto",
         "enums.proto",
         "filename-with-dash.proto",
         "groups_editions.proto",

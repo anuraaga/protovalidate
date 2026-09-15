@@ -312,10 +312,6 @@ func sint32Suite() suites.Suite {
 				},
 			),
 		},
-		"compilation/wrong_type": {
-			Message:  &cases.SInt32IncorrectType{Val: 123},
-			Expected: results.CompilationError("double rules on float field"),
-		},
 		"example/valid": {
 			Message:  &cases.SInt32Example{Val: 1},
 			Expected: results.Success(true),

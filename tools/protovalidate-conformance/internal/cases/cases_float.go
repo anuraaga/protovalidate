@@ -458,10 +458,6 @@ func floatSuite() suites.Suite {
 				},
 			),
 		},
-		"compilation/wrong_type": {
-			Message:  &cases.FloatIncorrectType{Val: 123},
-			Expected: results.CompilationError("double rules on float field"),
-		},
 		"example/valid": {
 			Message:  &cases.FloatExample{Val: 1.23},
 			Expected: results.Success(true),

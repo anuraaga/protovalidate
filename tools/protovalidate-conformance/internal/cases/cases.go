@@ -23,6 +23,7 @@ import (
 // tests can be found in /protos/testing/buf/validate/conformance/cases.
 func GlobalSuites() suites.Suites {
 	return suites.Suites{
+		"compilation_errors":                         compilationErrorsSuite(),
 		"custom_rules":                               customSuite(),
 		"predefined_rules":                           predefinedSuite(),
 		"kitchen_sink":                               kitchenSinkSuite(),

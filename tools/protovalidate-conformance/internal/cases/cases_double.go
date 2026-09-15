@@ -441,10 +441,6 @@ func doubleSuite() suites.Suite {
 			Expected: results.Violations(
 				&validate.Violation{Field: results.FieldPath("val"), Rule: results.FieldPath("double.gte"), RuleId: proto.String("double.gte_lte")}),
 		},
-		"compilation/wrong_type": {
-			Message:  &cases.DoubleIncorrectType{Val: 123},
-			Expected: results.CompilationError("double rules on float field"),
-		},
 		"example/valid": {
 			Message:  &cases.DoubleExample{Val: 1.23},
 			Expected: results.Success(true),

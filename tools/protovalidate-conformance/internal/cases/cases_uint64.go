@@ -312,10 +312,6 @@ func uint64Suite() suites.Suite {
 				},
 			),
 		},
-		"compilation/wrong_type": {
-			Message:  &cases.UInt64IncorrectType{Val: 123},
-			Expected: results.CompilationError("double rules on float field"),
-		},
 		"example/valid": {
 			Message:  &cases.UInt64Example{Val: 1},
 			Expected: results.Success(true),

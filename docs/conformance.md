@@ -63,6 +63,11 @@ utilized to make concrete message _test cases_ which are organized into groups
 known as [_test suites_][suites]. Which tests are passed to the executor can be
 controlled through the `--suite` and `--case` flags mentioned above.
 
+A case whose expected result is a compilation error belongs in the
+`compilation_errors` suite, and its message belongs in one of the
+`compilation_errors.proto` files, so that no other suite is sent a descriptor
+that cannot be compiled.
+
 ### Expected Failures
 
 The conformance test harness can be configured to expect certain failures. This

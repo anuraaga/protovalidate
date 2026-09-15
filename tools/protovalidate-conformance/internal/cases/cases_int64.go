@@ -329,10 +329,6 @@ func int64Suite() suites.Suite {
 			},
 			Expected: results.Success(true),
 		},
-		"compilation/wrong_type": {
-			Message:  &cases.Int64IncorrectType{Val: 123},
-			Expected: results.CompilationError("double rules on float field"),
-		},
 		"example/valid": {
 			Message:  &cases.Int64Example{Val: 1},
 			Expected: results.Success(true),

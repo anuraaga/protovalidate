@@ -110,16 +110,6 @@ func customSuite() suites.Suite {
 			Message:  &custom_rules.NowEqualsNow{},
 			Expected: results.Success(true),
 		},
-		"compilation/missing_field": {
-			Message: &custom_rules.MissingField{A: 123},
-			Expected: results.CompilationError(
-				"expression references a non-existent field b"),
-		},
-		"compilation/incorrect_type": {
-			Message: &custom_rules.IncorrectType{A: 123},
-			Expected: results.CompilationError(
-				"expression incorrectly treats an int32 field as a string"),
-		},
 		"runtime/dyn_incorrect_type": {
 			Message: &custom_rules.DynRuntimeError{A: 123},
 			Expected: results.RuntimeError(

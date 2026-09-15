@@ -1,0 +1,47 @@
+// Copyright 2023-2026 Buf Technologies, Inc.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto3";
+
+// Every message in this file carries rules that are expected to fail
+// compilation. They are kept separate from the messages whose rules are
+// expected to compile so that the conformance harness can send them in a
+// dedicated FileDescriptorSet, allowing an implementation to eagerly compile
+// every descriptor it is handed in the primary set.
+//
+// Do not add messages here whose rules are expected to compile, and do not
+// import this file from any other conformance case file.
+package buf.validate.conformance.cases.custom_rules;
+
+import "buf/validate/validate.proto";
+
+message MissingField {
+  option (message).cel = {
+    id: "missing_field"
+    message: "b must be positive"
+    expression: "this.b > 0"
+  };
+
+  int32 a = 1;
+}
+
+message IncorrectType {
+  option (message).cel = {
+    id: "incorrect_type"
+    message: "a must start with 'foo'"
+    expression: "this.a.startsWith('foo')"
+  };
+
+  int32 a = 1;
+}

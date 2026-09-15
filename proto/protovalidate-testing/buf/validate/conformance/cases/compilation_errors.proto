@@ -1,0 +1,180 @@
+// Copyright 2023-2026 Buf Technologies, Inc.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto3";
+
+// Every message in this file carries rules that are expected to fail
+// compilation. They are kept separate from the messages whose rules are
+// expected to compile so that the conformance harness can send them in a
+// dedicated FileDescriptorSet, allowing an implementation to eagerly compile
+// every descriptor it is handed in the primary set.
+//
+// Do not add messages here whose rules are expected to compile, and do not
+// import this file from any other conformance case file.
+package buf.validate.conformance.cases;
+
+import "buf/validate/validate.proto";
+import "google/protobuf/duration.proto";
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+
+// Numeric rules applied to a field of a different numeric type.
+
+message FloatIncorrectType {
+  float val = 1 [(buf.validate.field).double.gt = 0];
+}
+
+message DoubleIncorrectType {
+  double val = 1 [(buf.validate.field).float.gt = 0];
+}
+
+message Int32IncorrectType {
+  int32 val = 1 [(buf.validate.field).float.gt = 0];
+}
+
+message Int64IncorrectType {
+  int64 val = 1 [(buf.validate.field).float.gt = 0];
+}
+
+message UInt32IncorrectType {
+  uint32 val = 1 [(buf.validate.field).float.gt = 0];
+}
+
+message UInt64IncorrectType {
+  uint64 val = 1 [(buf.validate.field).float.gt = 0];
+}
+
+message SInt32IncorrectType {
+  sint32 val = 1 [(buf.validate.field).float.gt = 0];
+}
+
+message SInt64IncorrectType {
+  sint64 val = 1 [(buf.validate.field).float.gt = 0];
+}
+
+message Fixed32IncorrectType {
+  fixed32 val = 1 [(buf.validate.field).float.gt = 0];
+}
+
+message Fixed64IncorrectType {
+  fixed64 val = 1 [(buf.validate.field).float.gt = 0];
+}
+
+message SFixed32IncorrectType {
+  sfixed32 val = 1 [(buf.validate.field).float.gt = 0];
+}
+
+message SFixed64IncorrectType {
+  sfixed64 val = 1 [(buf.validate.field).float.gt = 0];
+}
+
+// Message oneof rules that do not name a valid set of fields.
+
+message MessageOneofUnknownFieldName {
+  option (buf.validate.message).oneof = {
+    fields: ["xxx"]
+  };
+  string str_field = 1;
+}
+
+message MessageOneofDuplicateField {
+  option (buf.validate.message).oneof = {
+    fields: [
+      "str_field",
+      "bool_field",
+      "str_field"
+    ]
+  };
+  string str_field = 1;
+  bool bool_field = 2;
+}
+
+message MessageOneofZeroFields {
+  option (buf.validate.message).oneof = {
+    fields: []
+  };
+  string str_field = 1;
+  bool bool_field = 2;
+}
+
+// Any rules applied to fields that are not google.protobuf.Any.
+
+message AnyWrongTypeScalar {
+  string val = 1 [(buf.validate.field).any = {
+    not_in: ["type.googleapis.com/google.protobuf.Timestamp"]
+  }];
+}
+
+message AnyWrongTypeMessage {
+  message WrongType {
+    int32 val = 1;
+  }
+  WrongType val = 1 [(buf.validate.field).any = {
+    not_in: ["type.googleapis.com/google.protobuf.Timestamp"]
+  }];
+}
+
+message AnyWrongTypeWrapper {
+  google.protobuf.Int32Value val = 1 [(buf.validate.field).any = {
+    not_in: ["type.googleapis.com/google.protobuf.Timestamp"]
+  }];
+}
+
+message AnyWrongTypeWKT {
+  google.protobuf.Timestamp val = 1 [(buf.validate.field).any = {
+    not_in: ["type.googleapis.com/google.protobuf.Timestamp"]
+  }];
+}
+
+// Duration rules applied to fields that are not google.protobuf.Duration.
+
+message DurationWrongTypeScalar {
+  int32 seconds = 1 [(buf.validate.field).duration.lte = {seconds: 1}];
+}
+
+message DurationWrongTypeMessage {
+  message WrongType {
+    int32 seconds = 1;
+  }
+  WrongType val = 1 [(buf.validate.field).duration.lte = {seconds: 1}];
+}
+
+message DurationWrongTypeWrapper {
+  google.protobuf.Int32Value val = 1 [(buf.validate.field).duration.example = {seconds: 3}];
+}
+
+message DurationWrongTypeWKT {
+  google.protobuf.Timestamp val = 1 [(buf.validate.field).duration.example = {seconds: 3}];
+}
+
+// Timestamp rules applied to fields that are not google.protobuf.Timestamp.
+
+message TimestampWrongTypeScalar {
+  int32 val = 1 [(buf.validate.field).timestamp.lt_now = true];
+}
+
+message TimestampWrongTypeMessage {
+  message WrongType {
+    int32 val = 1;
+  }
+  WrongType val = 1 [(buf.validate.field).timestamp.lt_now = true];
+}
+
+message TimestampWrongTypeWrapper {
+  google.protobuf.Int32Value val = 1 [(buf.validate.field).timestamp.lt_now = true];
+}
+
+message TimestampWrongTypeWKT {
+  google.protobuf.Duration val = 1 [(buf.validate.field).timestamp.lt_now = true];
+}

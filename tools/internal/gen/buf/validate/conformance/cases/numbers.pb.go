@@ -696,50 +696,6 @@ func (x *FloatIgnore) GetVal() float32 {
 	return 0
 }
 
-type FloatIncorrectType struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	Val           float32                `protobuf:"fixed32,1,opt,name=val,proto3" json:"val,omitempty"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *FloatIncorrectType) Reset() {
-	*x = FloatIncorrectType{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[15]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *FloatIncorrectType) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*FloatIncorrectType) ProtoMessage() {}
-
-func (x *FloatIncorrectType) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[15]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use FloatIncorrectType.ProtoReflect.Descriptor instead.
-func (*FloatIncorrectType) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{15}
-}
-
-func (x *FloatIncorrectType) GetVal() float32 {
-	if x != nil {
-		return x.Val
-	}
-	return 0
-}
-
 type FloatExample struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Val           float32                `protobuf:"fixed32,1,opt,name=val,proto3" json:"val,omitempty"`
@@ -749,7 +705,7 @@ type FloatExample struct {
 
 func (x *FloatExample) Reset() {
 	*x = FloatExample{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[16]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[15]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -761,7 +717,7 @@ func (x *FloatExample) String() string {
 func (*FloatExample) ProtoMessage() {}
 
 func (x *FloatExample) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[16]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[15]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -774,7 +730,7 @@ func (x *FloatExample) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FloatExample.ProtoReflect.Descriptor instead.
 func (*FloatExample) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{16}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{15}
 }
 
 func (x *FloatExample) GetVal() float32 {
@@ -793,7 +749,7 @@ type DoubleNone struct {
 
 func (x *DoubleNone) Reset() {
 	*x = DoubleNone{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[17]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[16]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -805,7 +761,7 @@ func (x *DoubleNone) String() string {
 func (*DoubleNone) ProtoMessage() {}
 
 func (x *DoubleNone) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[17]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[16]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -818,7 +774,7 @@ func (x *DoubleNone) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DoubleNone.ProtoReflect.Descriptor instead.
 func (*DoubleNone) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{17}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{16}
 }
 
 func (x *DoubleNone) GetVal() float64 {
@@ -837,7 +793,7 @@ type DoubleConst struct {
 
 func (x *DoubleConst) Reset() {
 	*x = DoubleConst{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[18]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[17]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -849,7 +805,7 @@ func (x *DoubleConst) String() string {
 func (*DoubleConst) ProtoMessage() {}
 
 func (x *DoubleConst) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[18]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[17]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -862,7 +818,7 @@ func (x *DoubleConst) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DoubleConst.ProtoReflect.Descriptor instead.
 func (*DoubleConst) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{18}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{17}
 }
 
 func (x *DoubleConst) GetVal() float64 {
@@ -881,7 +837,7 @@ type DoubleIn struct {
 
 func (x *DoubleIn) Reset() {
 	*x = DoubleIn{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[19]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[18]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -893,7 +849,7 @@ func (x *DoubleIn) String() string {
 func (*DoubleIn) ProtoMessage() {}
 
 func (x *DoubleIn) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[19]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[18]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -906,7 +862,7 @@ func (x *DoubleIn) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DoubleIn.ProtoReflect.Descriptor instead.
 func (*DoubleIn) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{19}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{18}
 }
 
 func (x *DoubleIn) GetVal() float64 {
@@ -925,7 +881,7 @@ type DoubleNotIn struct {
 
 func (x *DoubleNotIn) Reset() {
 	*x = DoubleNotIn{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[20]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[19]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -937,7 +893,7 @@ func (x *DoubleNotIn) String() string {
 func (*DoubleNotIn) ProtoMessage() {}
 
 func (x *DoubleNotIn) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[20]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[19]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -950,7 +906,7 @@ func (x *DoubleNotIn) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DoubleNotIn.ProtoReflect.Descriptor instead.
 func (*DoubleNotIn) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{20}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{19}
 }
 
 func (x *DoubleNotIn) GetVal() float64 {
@@ -969,7 +925,7 @@ type DoubleLT struct {
 
 func (x *DoubleLT) Reset() {
 	*x = DoubleLT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[21]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[20]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -981,7 +937,7 @@ func (x *DoubleLT) String() string {
 func (*DoubleLT) ProtoMessage() {}
 
 func (x *DoubleLT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[21]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[20]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -994,7 +950,7 @@ func (x *DoubleLT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DoubleLT.ProtoReflect.Descriptor instead.
 func (*DoubleLT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{21}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{20}
 }
 
 func (x *DoubleLT) GetVal() float64 {
@@ -1013,7 +969,7 @@ type DoubleLTE struct {
 
 func (x *DoubleLTE) Reset() {
 	*x = DoubleLTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[22]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[21]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1025,7 +981,7 @@ func (x *DoubleLTE) String() string {
 func (*DoubleLTE) ProtoMessage() {}
 
 func (x *DoubleLTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[22]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[21]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1038,7 +994,7 @@ func (x *DoubleLTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DoubleLTE.ProtoReflect.Descriptor instead.
 func (*DoubleLTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{22}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{21}
 }
 
 func (x *DoubleLTE) GetVal() float64 {
@@ -1057,7 +1013,7 @@ type DoubleGT struct {
 
 func (x *DoubleGT) Reset() {
 	*x = DoubleGT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[23]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[22]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1069,7 +1025,7 @@ func (x *DoubleGT) String() string {
 func (*DoubleGT) ProtoMessage() {}
 
 func (x *DoubleGT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[23]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[22]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1082,7 +1038,7 @@ func (x *DoubleGT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DoubleGT.ProtoReflect.Descriptor instead.
 func (*DoubleGT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{23}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{22}
 }
 
 func (x *DoubleGT) GetVal() float64 {
@@ -1101,7 +1057,7 @@ type DoubleGTE struct {
 
 func (x *DoubleGTE) Reset() {
 	*x = DoubleGTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[24]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[23]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1113,7 +1069,7 @@ func (x *DoubleGTE) String() string {
 func (*DoubleGTE) ProtoMessage() {}
 
 func (x *DoubleGTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[24]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[23]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1126,7 +1082,7 @@ func (x *DoubleGTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DoubleGTE.ProtoReflect.Descriptor instead.
 func (*DoubleGTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{24}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{23}
 }
 
 func (x *DoubleGTE) GetVal() float64 {
@@ -1145,7 +1101,7 @@ type DoubleGTLT struct {
 
 func (x *DoubleGTLT) Reset() {
 	*x = DoubleGTLT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[25]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[24]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1157,7 +1113,7 @@ func (x *DoubleGTLT) String() string {
 func (*DoubleGTLT) ProtoMessage() {}
 
 func (x *DoubleGTLT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[25]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[24]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1170,7 +1126,7 @@ func (x *DoubleGTLT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DoubleGTLT.ProtoReflect.Descriptor instead.
 func (*DoubleGTLT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{25}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{24}
 }
 
 func (x *DoubleGTLT) GetVal() float64 {
@@ -1189,7 +1145,7 @@ type DoubleExLTGT struct {
 
 func (x *DoubleExLTGT) Reset() {
 	*x = DoubleExLTGT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[26]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[25]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1201,7 +1157,7 @@ func (x *DoubleExLTGT) String() string {
 func (*DoubleExLTGT) ProtoMessage() {}
 
 func (x *DoubleExLTGT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[26]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[25]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1214,7 +1170,7 @@ func (x *DoubleExLTGT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DoubleExLTGT.ProtoReflect.Descriptor instead.
 func (*DoubleExLTGT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{26}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{25}
 }
 
 func (x *DoubleExLTGT) GetVal() float64 {
@@ -1233,7 +1189,7 @@ type DoubleGTELTE struct {
 
 func (x *DoubleGTELTE) Reset() {
 	*x = DoubleGTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[27]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[26]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1245,7 +1201,7 @@ func (x *DoubleGTELTE) String() string {
 func (*DoubleGTELTE) ProtoMessage() {}
 
 func (x *DoubleGTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[27]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[26]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1258,7 +1214,7 @@ func (x *DoubleGTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DoubleGTELTE.ProtoReflect.Descriptor instead.
 func (*DoubleGTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{27}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{26}
 }
 
 func (x *DoubleGTELTE) GetVal() float64 {
@@ -1277,7 +1233,7 @@ type DoubleExGTELTE struct {
 
 func (x *DoubleExGTELTE) Reset() {
 	*x = DoubleExGTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[28]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[27]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1289,7 +1245,7 @@ func (x *DoubleExGTELTE) String() string {
 func (*DoubleExGTELTE) ProtoMessage() {}
 
 func (x *DoubleExGTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[28]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[27]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1302,7 +1258,7 @@ func (x *DoubleExGTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DoubleExGTELTE.ProtoReflect.Descriptor instead.
 func (*DoubleExGTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{28}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{27}
 }
 
 func (x *DoubleExGTELTE) GetVal() float64 {
@@ -1321,7 +1277,7 @@ type DoubleFinite struct {
 
 func (x *DoubleFinite) Reset() {
 	*x = DoubleFinite{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[29]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[28]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1333,7 +1289,7 @@ func (x *DoubleFinite) String() string {
 func (*DoubleFinite) ProtoMessage() {}
 
 func (x *DoubleFinite) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[29]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[28]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1346,7 +1302,7 @@ func (x *DoubleFinite) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DoubleFinite.ProtoReflect.Descriptor instead.
 func (*DoubleFinite) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{29}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{28}
 }
 
 func (x *DoubleFinite) GetVal() float64 {
@@ -1365,7 +1321,7 @@ type DoubleNotFinite struct {
 
 func (x *DoubleNotFinite) Reset() {
 	*x = DoubleNotFinite{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[30]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[29]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1377,7 +1333,7 @@ func (x *DoubleNotFinite) String() string {
 func (*DoubleNotFinite) ProtoMessage() {}
 
 func (x *DoubleNotFinite) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[30]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[29]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1390,7 +1346,7 @@ func (x *DoubleNotFinite) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DoubleNotFinite.ProtoReflect.Descriptor instead.
 func (*DoubleNotFinite) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{30}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{29}
 }
 
 func (x *DoubleNotFinite) GetVal() float64 {
@@ -1409,7 +1365,7 @@ type DoubleIgnore struct {
 
 func (x *DoubleIgnore) Reset() {
 	*x = DoubleIgnore{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[31]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[30]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1421,7 +1377,7 @@ func (x *DoubleIgnore) String() string {
 func (*DoubleIgnore) ProtoMessage() {}
 
 func (x *DoubleIgnore) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[31]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[30]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1434,54 +1390,10 @@ func (x *DoubleIgnore) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DoubleIgnore.ProtoReflect.Descriptor instead.
 func (*DoubleIgnore) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{31}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{30}
 }
 
 func (x *DoubleIgnore) GetVal() float64 {
-	if x != nil {
-		return x.Val
-	}
-	return 0
-}
-
-type DoubleIncorrectType struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	Val           float64                `protobuf:"fixed64,1,opt,name=val,proto3" json:"val,omitempty"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *DoubleIncorrectType) Reset() {
-	*x = DoubleIncorrectType{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[32]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *DoubleIncorrectType) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*DoubleIncorrectType) ProtoMessage() {}
-
-func (x *DoubleIncorrectType) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[32]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use DoubleIncorrectType.ProtoReflect.Descriptor instead.
-func (*DoubleIncorrectType) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{32}
-}
-
-func (x *DoubleIncorrectType) GetVal() float64 {
 	if x != nil {
 		return x.Val
 	}
@@ -1497,7 +1409,7 @@ type DoubleExample struct {
 
 func (x *DoubleExample) Reset() {
 	*x = DoubleExample{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[33]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[31]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1509,7 +1421,7 @@ func (x *DoubleExample) String() string {
 func (*DoubleExample) ProtoMessage() {}
 
 func (x *DoubleExample) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[33]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[31]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1522,7 +1434,7 @@ func (x *DoubleExample) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use DoubleExample.ProtoReflect.Descriptor instead.
 func (*DoubleExample) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{33}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{31}
 }
 
 func (x *DoubleExample) GetVal() float64 {
@@ -1541,7 +1453,7 @@ type Int32None struct {
 
 func (x *Int32None) Reset() {
 	*x = Int32None{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[34]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[32]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1553,7 +1465,7 @@ func (x *Int32None) String() string {
 func (*Int32None) ProtoMessage() {}
 
 func (x *Int32None) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[34]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[32]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1566,7 +1478,7 @@ func (x *Int32None) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int32None.ProtoReflect.Descriptor instead.
 func (*Int32None) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{34}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{32}
 }
 
 func (x *Int32None) GetVal() int32 {
@@ -1585,7 +1497,7 @@ type Int32Const struct {
 
 func (x *Int32Const) Reset() {
 	*x = Int32Const{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[35]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[33]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1597,7 +1509,7 @@ func (x *Int32Const) String() string {
 func (*Int32Const) ProtoMessage() {}
 
 func (x *Int32Const) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[35]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[33]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1610,7 +1522,7 @@ func (x *Int32Const) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int32Const.ProtoReflect.Descriptor instead.
 func (*Int32Const) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{35}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{33}
 }
 
 func (x *Int32Const) GetVal() int32 {
@@ -1629,7 +1541,7 @@ type Int32In struct {
 
 func (x *Int32In) Reset() {
 	*x = Int32In{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[36]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[34]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1641,7 +1553,7 @@ func (x *Int32In) String() string {
 func (*Int32In) ProtoMessage() {}
 
 func (x *Int32In) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[36]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[34]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1654,7 +1566,7 @@ func (x *Int32In) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int32In.ProtoReflect.Descriptor instead.
 func (*Int32In) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{36}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{34}
 }
 
 func (x *Int32In) GetVal() int32 {
@@ -1673,7 +1585,7 @@ type Int32NotIn struct {
 
 func (x *Int32NotIn) Reset() {
 	*x = Int32NotIn{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[37]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[35]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1685,7 +1597,7 @@ func (x *Int32NotIn) String() string {
 func (*Int32NotIn) ProtoMessage() {}
 
 func (x *Int32NotIn) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[37]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[35]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1698,7 +1610,7 @@ func (x *Int32NotIn) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int32NotIn.ProtoReflect.Descriptor instead.
 func (*Int32NotIn) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{37}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{35}
 }
 
 func (x *Int32NotIn) GetVal() int32 {
@@ -1717,7 +1629,7 @@ type Int32LT struct {
 
 func (x *Int32LT) Reset() {
 	*x = Int32LT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[38]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[36]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1729,7 +1641,7 @@ func (x *Int32LT) String() string {
 func (*Int32LT) ProtoMessage() {}
 
 func (x *Int32LT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[38]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[36]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1742,7 +1654,7 @@ func (x *Int32LT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int32LT.ProtoReflect.Descriptor instead.
 func (*Int32LT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{38}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{36}
 }
 
 func (x *Int32LT) GetVal() int32 {
@@ -1761,7 +1673,7 @@ type Int32LTE struct {
 
 func (x *Int32LTE) Reset() {
 	*x = Int32LTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[39]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[37]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1773,7 +1685,7 @@ func (x *Int32LTE) String() string {
 func (*Int32LTE) ProtoMessage() {}
 
 func (x *Int32LTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[39]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[37]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1786,7 +1698,7 @@ func (x *Int32LTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int32LTE.ProtoReflect.Descriptor instead.
 func (*Int32LTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{39}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{37}
 }
 
 func (x *Int32LTE) GetVal() int32 {
@@ -1805,7 +1717,7 @@ type Int32GT struct {
 
 func (x *Int32GT) Reset() {
 	*x = Int32GT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[40]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[38]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1817,7 +1729,7 @@ func (x *Int32GT) String() string {
 func (*Int32GT) ProtoMessage() {}
 
 func (x *Int32GT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[40]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[38]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1830,7 +1742,7 @@ func (x *Int32GT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int32GT.ProtoReflect.Descriptor instead.
 func (*Int32GT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{40}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{38}
 }
 
 func (x *Int32GT) GetVal() int32 {
@@ -1849,7 +1761,7 @@ type Int32GTE struct {
 
 func (x *Int32GTE) Reset() {
 	*x = Int32GTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[41]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[39]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1861,7 +1773,7 @@ func (x *Int32GTE) String() string {
 func (*Int32GTE) ProtoMessage() {}
 
 func (x *Int32GTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[41]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[39]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1874,7 +1786,7 @@ func (x *Int32GTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int32GTE.ProtoReflect.Descriptor instead.
 func (*Int32GTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{41}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{39}
 }
 
 func (x *Int32GTE) GetVal() int32 {
@@ -1893,7 +1805,7 @@ type Int32GTLT struct {
 
 func (x *Int32GTLT) Reset() {
 	*x = Int32GTLT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[42]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[40]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1905,7 +1817,7 @@ func (x *Int32GTLT) String() string {
 func (*Int32GTLT) ProtoMessage() {}
 
 func (x *Int32GTLT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[42]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[40]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1918,7 +1830,7 @@ func (x *Int32GTLT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int32GTLT.ProtoReflect.Descriptor instead.
 func (*Int32GTLT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{42}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{40}
 }
 
 func (x *Int32GTLT) GetVal() int32 {
@@ -1937,7 +1849,7 @@ type Int32ExLTGT struct {
 
 func (x *Int32ExLTGT) Reset() {
 	*x = Int32ExLTGT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[43]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[41]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1949,7 +1861,7 @@ func (x *Int32ExLTGT) String() string {
 func (*Int32ExLTGT) ProtoMessage() {}
 
 func (x *Int32ExLTGT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[43]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[41]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1962,7 +1874,7 @@ func (x *Int32ExLTGT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int32ExLTGT.ProtoReflect.Descriptor instead.
 func (*Int32ExLTGT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{43}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{41}
 }
 
 func (x *Int32ExLTGT) GetVal() int32 {
@@ -1981,7 +1893,7 @@ type Int32GTELTE struct {
 
 func (x *Int32GTELTE) Reset() {
 	*x = Int32GTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[44]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[42]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1993,7 +1905,7 @@ func (x *Int32GTELTE) String() string {
 func (*Int32GTELTE) ProtoMessage() {}
 
 func (x *Int32GTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[44]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[42]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2006,7 +1918,7 @@ func (x *Int32GTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int32GTELTE.ProtoReflect.Descriptor instead.
 func (*Int32GTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{44}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{42}
 }
 
 func (x *Int32GTELTE) GetVal() int32 {
@@ -2025,7 +1937,7 @@ type Int32ExGTELTE struct {
 
 func (x *Int32ExGTELTE) Reset() {
 	*x = Int32ExGTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[45]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[43]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2037,7 +1949,7 @@ func (x *Int32ExGTELTE) String() string {
 func (*Int32ExGTELTE) ProtoMessage() {}
 
 func (x *Int32ExGTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[45]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[43]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2050,7 +1962,7 @@ func (x *Int32ExGTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int32ExGTELTE.ProtoReflect.Descriptor instead.
 func (*Int32ExGTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{45}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{43}
 }
 
 func (x *Int32ExGTELTE) GetVal() int32 {
@@ -2069,7 +1981,7 @@ type Int32Ignore struct {
 
 func (x *Int32Ignore) Reset() {
 	*x = Int32Ignore{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[46]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[44]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2081,7 +1993,7 @@ func (x *Int32Ignore) String() string {
 func (*Int32Ignore) ProtoMessage() {}
 
 func (x *Int32Ignore) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[46]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[44]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2094,54 +2006,10 @@ func (x *Int32Ignore) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int32Ignore.ProtoReflect.Descriptor instead.
 func (*Int32Ignore) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{46}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{44}
 }
 
 func (x *Int32Ignore) GetVal() int32 {
-	if x != nil {
-		return x.Val
-	}
-	return 0
-}
-
-type Int32IncorrectType struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	Val           int32                  `protobuf:"varint,1,opt,name=val,proto3" json:"val,omitempty"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *Int32IncorrectType) Reset() {
-	*x = Int32IncorrectType{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[47]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *Int32IncorrectType) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*Int32IncorrectType) ProtoMessage() {}
-
-func (x *Int32IncorrectType) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[47]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use Int32IncorrectType.ProtoReflect.Descriptor instead.
-func (*Int32IncorrectType) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{47}
-}
-
-func (x *Int32IncorrectType) GetVal() int32 {
 	if x != nil {
 		return x.Val
 	}
@@ -2157,7 +2025,7 @@ type Int32Example struct {
 
 func (x *Int32Example) Reset() {
 	*x = Int32Example{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[48]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[45]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2169,7 +2037,7 @@ func (x *Int32Example) String() string {
 func (*Int32Example) ProtoMessage() {}
 
 func (x *Int32Example) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[48]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[45]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2182,7 +2050,7 @@ func (x *Int32Example) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int32Example.ProtoReflect.Descriptor instead.
 func (*Int32Example) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{48}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{45}
 }
 
 func (x *Int32Example) GetVal() int32 {
@@ -2201,7 +2069,7 @@ type Int64None struct {
 
 func (x *Int64None) Reset() {
 	*x = Int64None{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[49]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[46]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2213,7 +2081,7 @@ func (x *Int64None) String() string {
 func (*Int64None) ProtoMessage() {}
 
 func (x *Int64None) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[49]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[46]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2226,7 +2094,7 @@ func (x *Int64None) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int64None.ProtoReflect.Descriptor instead.
 func (*Int64None) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{49}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{46}
 }
 
 func (x *Int64None) GetVal() int64 {
@@ -2245,7 +2113,7 @@ type Int64Const struct {
 
 func (x *Int64Const) Reset() {
 	*x = Int64Const{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[50]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[47]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2257,7 +2125,7 @@ func (x *Int64Const) String() string {
 func (*Int64Const) ProtoMessage() {}
 
 func (x *Int64Const) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[50]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[47]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2270,7 +2138,7 @@ func (x *Int64Const) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int64Const.ProtoReflect.Descriptor instead.
 func (*Int64Const) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{50}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{47}
 }
 
 func (x *Int64Const) GetVal() int64 {
@@ -2289,7 +2157,7 @@ type Int64In struct {
 
 func (x *Int64In) Reset() {
 	*x = Int64In{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[51]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[48]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2301,7 +2169,7 @@ func (x *Int64In) String() string {
 func (*Int64In) ProtoMessage() {}
 
 func (x *Int64In) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[51]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[48]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2314,7 +2182,7 @@ func (x *Int64In) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int64In.ProtoReflect.Descriptor instead.
 func (*Int64In) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{51}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{48}
 }
 
 func (x *Int64In) GetVal() int64 {
@@ -2333,7 +2201,7 @@ type Int64NotIn struct {
 
 func (x *Int64NotIn) Reset() {
 	*x = Int64NotIn{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[52]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[49]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2345,7 +2213,7 @@ func (x *Int64NotIn) String() string {
 func (*Int64NotIn) ProtoMessage() {}
 
 func (x *Int64NotIn) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[52]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[49]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2358,7 +2226,7 @@ func (x *Int64NotIn) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int64NotIn.ProtoReflect.Descriptor instead.
 func (*Int64NotIn) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{52}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{49}
 }
 
 func (x *Int64NotIn) GetVal() int64 {
@@ -2377,7 +2245,7 @@ type Int64LT struct {
 
 func (x *Int64LT) Reset() {
 	*x = Int64LT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[53]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[50]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2389,7 +2257,7 @@ func (x *Int64LT) String() string {
 func (*Int64LT) ProtoMessage() {}
 
 func (x *Int64LT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[53]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[50]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2402,7 +2270,7 @@ func (x *Int64LT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int64LT.ProtoReflect.Descriptor instead.
 func (*Int64LT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{53}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{50}
 }
 
 func (x *Int64LT) GetVal() int64 {
@@ -2421,7 +2289,7 @@ type Int64LTE struct {
 
 func (x *Int64LTE) Reset() {
 	*x = Int64LTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[54]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[51]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2433,7 +2301,7 @@ func (x *Int64LTE) String() string {
 func (*Int64LTE) ProtoMessage() {}
 
 func (x *Int64LTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[54]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[51]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2446,7 +2314,7 @@ func (x *Int64LTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int64LTE.ProtoReflect.Descriptor instead.
 func (*Int64LTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{54}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{51}
 }
 
 func (x *Int64LTE) GetVal() int64 {
@@ -2465,7 +2333,7 @@ type Int64GT struct {
 
 func (x *Int64GT) Reset() {
 	*x = Int64GT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[55]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[52]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2477,7 +2345,7 @@ func (x *Int64GT) String() string {
 func (*Int64GT) ProtoMessage() {}
 
 func (x *Int64GT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[55]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[52]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2490,7 +2358,7 @@ func (x *Int64GT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int64GT.ProtoReflect.Descriptor instead.
 func (*Int64GT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{55}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{52}
 }
 
 func (x *Int64GT) GetVal() int64 {
@@ -2509,7 +2377,7 @@ type Int64GTE struct {
 
 func (x *Int64GTE) Reset() {
 	*x = Int64GTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[56]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[53]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2521,7 +2389,7 @@ func (x *Int64GTE) String() string {
 func (*Int64GTE) ProtoMessage() {}
 
 func (x *Int64GTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[56]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[53]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2534,7 +2402,7 @@ func (x *Int64GTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int64GTE.ProtoReflect.Descriptor instead.
 func (*Int64GTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{56}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{53}
 }
 
 func (x *Int64GTE) GetVal() int64 {
@@ -2553,7 +2421,7 @@ type Int64GTLT struct {
 
 func (x *Int64GTLT) Reset() {
 	*x = Int64GTLT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[57]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[54]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2565,7 +2433,7 @@ func (x *Int64GTLT) String() string {
 func (*Int64GTLT) ProtoMessage() {}
 
 func (x *Int64GTLT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[57]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[54]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2578,7 +2446,7 @@ func (x *Int64GTLT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int64GTLT.ProtoReflect.Descriptor instead.
 func (*Int64GTLT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{57}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{54}
 }
 
 func (x *Int64GTLT) GetVal() int64 {
@@ -2597,7 +2465,7 @@ type Int64ExLTGT struct {
 
 func (x *Int64ExLTGT) Reset() {
 	*x = Int64ExLTGT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[58]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[55]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2609,7 +2477,7 @@ func (x *Int64ExLTGT) String() string {
 func (*Int64ExLTGT) ProtoMessage() {}
 
 func (x *Int64ExLTGT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[58]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[55]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2622,7 +2490,7 @@ func (x *Int64ExLTGT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int64ExLTGT.ProtoReflect.Descriptor instead.
 func (*Int64ExLTGT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{58}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{55}
 }
 
 func (x *Int64ExLTGT) GetVal() int64 {
@@ -2641,7 +2509,7 @@ type Int64GTELTE struct {
 
 func (x *Int64GTELTE) Reset() {
 	*x = Int64GTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[59]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[56]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2653,7 +2521,7 @@ func (x *Int64GTELTE) String() string {
 func (*Int64GTELTE) ProtoMessage() {}
 
 func (x *Int64GTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[59]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[56]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2666,7 +2534,7 @@ func (x *Int64GTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int64GTELTE.ProtoReflect.Descriptor instead.
 func (*Int64GTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{59}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{56}
 }
 
 func (x *Int64GTELTE) GetVal() int64 {
@@ -2685,7 +2553,7 @@ type Int64ExGTELTE struct {
 
 func (x *Int64ExGTELTE) Reset() {
 	*x = Int64ExGTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[60]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[57]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2697,7 +2565,7 @@ func (x *Int64ExGTELTE) String() string {
 func (*Int64ExGTELTE) ProtoMessage() {}
 
 func (x *Int64ExGTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[60]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[57]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2710,7 +2578,7 @@ func (x *Int64ExGTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int64ExGTELTE.ProtoReflect.Descriptor instead.
 func (*Int64ExGTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{60}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{57}
 }
 
 func (x *Int64ExGTELTE) GetVal() int64 {
@@ -2729,7 +2597,7 @@ type Int64Ignore struct {
 
 func (x *Int64Ignore) Reset() {
 	*x = Int64Ignore{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[61]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[58]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2741,7 +2609,7 @@ func (x *Int64Ignore) String() string {
 func (*Int64Ignore) ProtoMessage() {}
 
 func (x *Int64Ignore) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[61]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[58]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2754,7 +2622,7 @@ func (x *Int64Ignore) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int64Ignore.ProtoReflect.Descriptor instead.
 func (*Int64Ignore) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{61}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{58}
 }
 
 func (x *Int64Ignore) GetVal() int64 {
@@ -2785,7 +2653,7 @@ type Int64BigRules struct {
 
 func (x *Int64BigRules) Reset() {
 	*x = Int64BigRules{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[62]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[59]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2797,7 +2665,7 @@ func (x *Int64BigRules) String() string {
 func (*Int64BigRules) ProtoMessage() {}
 
 func (x *Int64BigRules) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[62]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[59]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2810,7 +2678,7 @@ func (x *Int64BigRules) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int64BigRules.ProtoReflect.Descriptor instead.
 func (*Int64BigRules) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{62}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{59}
 }
 
 func (x *Int64BigRules) GetLtPos() int64 {
@@ -2897,50 +2765,6 @@ func (x *Int64BigRules) GetNotin() int64 {
 	return 0
 }
 
-type Int64IncorrectType struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	Val           int64                  `protobuf:"varint,1,opt,name=val,proto3" json:"val,omitempty"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *Int64IncorrectType) Reset() {
-	*x = Int64IncorrectType{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[63]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *Int64IncorrectType) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*Int64IncorrectType) ProtoMessage() {}
-
-func (x *Int64IncorrectType) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[63]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use Int64IncorrectType.ProtoReflect.Descriptor instead.
-func (*Int64IncorrectType) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{63}
-}
-
-func (x *Int64IncorrectType) GetVal() int64 {
-	if x != nil {
-		return x.Val
-	}
-	return 0
-}
-
 type Int64Example struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Val           int64                  `protobuf:"varint,1,opt,name=val,proto3" json:"val,omitempty"`
@@ -2950,7 +2774,7 @@ type Int64Example struct {
 
 func (x *Int64Example) Reset() {
 	*x = Int64Example{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[64]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[60]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -2962,7 +2786,7 @@ func (x *Int64Example) String() string {
 func (*Int64Example) ProtoMessage() {}
 
 func (x *Int64Example) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[64]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[60]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2975,7 +2799,7 @@ func (x *Int64Example) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int64Example.ProtoReflect.Descriptor instead.
 func (*Int64Example) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{64}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{60}
 }
 
 func (x *Int64Example) GetVal() int64 {
@@ -2994,7 +2818,7 @@ type UInt32None struct {
 
 func (x *UInt32None) Reset() {
 	*x = UInt32None{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[65]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[61]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3006,7 +2830,7 @@ func (x *UInt32None) String() string {
 func (*UInt32None) ProtoMessage() {}
 
 func (x *UInt32None) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[65]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[61]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3019,7 +2843,7 @@ func (x *UInt32None) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt32None.ProtoReflect.Descriptor instead.
 func (*UInt32None) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{65}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{61}
 }
 
 func (x *UInt32None) GetVal() uint32 {
@@ -3038,7 +2862,7 @@ type UInt32Const struct {
 
 func (x *UInt32Const) Reset() {
 	*x = UInt32Const{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[66]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[62]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3050,7 +2874,7 @@ func (x *UInt32Const) String() string {
 func (*UInt32Const) ProtoMessage() {}
 
 func (x *UInt32Const) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[66]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[62]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3063,7 +2887,7 @@ func (x *UInt32Const) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt32Const.ProtoReflect.Descriptor instead.
 func (*UInt32Const) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{66}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{62}
 }
 
 func (x *UInt32Const) GetVal() uint32 {
@@ -3082,7 +2906,7 @@ type UInt32In struct {
 
 func (x *UInt32In) Reset() {
 	*x = UInt32In{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[67]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[63]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3094,7 +2918,7 @@ func (x *UInt32In) String() string {
 func (*UInt32In) ProtoMessage() {}
 
 func (x *UInt32In) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[67]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[63]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3107,7 +2931,7 @@ func (x *UInt32In) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt32In.ProtoReflect.Descriptor instead.
 func (*UInt32In) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{67}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{63}
 }
 
 func (x *UInt32In) GetVal() uint32 {
@@ -3126,7 +2950,7 @@ type UInt32NotIn struct {
 
 func (x *UInt32NotIn) Reset() {
 	*x = UInt32NotIn{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[68]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[64]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3138,7 +2962,7 @@ func (x *UInt32NotIn) String() string {
 func (*UInt32NotIn) ProtoMessage() {}
 
 func (x *UInt32NotIn) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[68]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[64]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3151,7 +2975,7 @@ func (x *UInt32NotIn) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt32NotIn.ProtoReflect.Descriptor instead.
 func (*UInt32NotIn) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{68}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{64}
 }
 
 func (x *UInt32NotIn) GetVal() uint32 {
@@ -3170,7 +2994,7 @@ type UInt32LT struct {
 
 func (x *UInt32LT) Reset() {
 	*x = UInt32LT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[69]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[65]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3182,7 +3006,7 @@ func (x *UInt32LT) String() string {
 func (*UInt32LT) ProtoMessage() {}
 
 func (x *UInt32LT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[69]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[65]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3195,7 +3019,7 @@ func (x *UInt32LT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt32LT.ProtoReflect.Descriptor instead.
 func (*UInt32LT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{69}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{65}
 }
 
 func (x *UInt32LT) GetVal() uint32 {
@@ -3214,7 +3038,7 @@ type UInt32LTE struct {
 
 func (x *UInt32LTE) Reset() {
 	*x = UInt32LTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[70]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[66]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3226,7 +3050,7 @@ func (x *UInt32LTE) String() string {
 func (*UInt32LTE) ProtoMessage() {}
 
 func (x *UInt32LTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[70]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[66]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3239,7 +3063,7 @@ func (x *UInt32LTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt32LTE.ProtoReflect.Descriptor instead.
 func (*UInt32LTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{70}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{66}
 }
 
 func (x *UInt32LTE) GetVal() uint32 {
@@ -3258,7 +3082,7 @@ type UInt32GT struct {
 
 func (x *UInt32GT) Reset() {
 	*x = UInt32GT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[71]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[67]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3270,7 +3094,7 @@ func (x *UInt32GT) String() string {
 func (*UInt32GT) ProtoMessage() {}
 
 func (x *UInt32GT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[71]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[67]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3283,7 +3107,7 @@ func (x *UInt32GT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt32GT.ProtoReflect.Descriptor instead.
 func (*UInt32GT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{71}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{67}
 }
 
 func (x *UInt32GT) GetVal() uint32 {
@@ -3302,7 +3126,7 @@ type UInt32GTE struct {
 
 func (x *UInt32GTE) Reset() {
 	*x = UInt32GTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[72]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[68]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3314,7 +3138,7 @@ func (x *UInt32GTE) String() string {
 func (*UInt32GTE) ProtoMessage() {}
 
 func (x *UInt32GTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[72]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[68]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3327,7 +3151,7 @@ func (x *UInt32GTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt32GTE.ProtoReflect.Descriptor instead.
 func (*UInt32GTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{72}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{68}
 }
 
 func (x *UInt32GTE) GetVal() uint32 {
@@ -3346,7 +3170,7 @@ type UInt32GTLT struct {
 
 func (x *UInt32GTLT) Reset() {
 	*x = UInt32GTLT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[73]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[69]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3358,7 +3182,7 @@ func (x *UInt32GTLT) String() string {
 func (*UInt32GTLT) ProtoMessage() {}
 
 func (x *UInt32GTLT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[73]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[69]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3371,7 +3195,7 @@ func (x *UInt32GTLT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt32GTLT.ProtoReflect.Descriptor instead.
 func (*UInt32GTLT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{73}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{69}
 }
 
 func (x *UInt32GTLT) GetVal() uint32 {
@@ -3390,7 +3214,7 @@ type UInt32ExLTGT struct {
 
 func (x *UInt32ExLTGT) Reset() {
 	*x = UInt32ExLTGT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[74]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[70]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3402,7 +3226,7 @@ func (x *UInt32ExLTGT) String() string {
 func (*UInt32ExLTGT) ProtoMessage() {}
 
 func (x *UInt32ExLTGT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[74]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[70]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3415,7 +3239,7 @@ func (x *UInt32ExLTGT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt32ExLTGT.ProtoReflect.Descriptor instead.
 func (*UInt32ExLTGT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{74}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{70}
 }
 
 func (x *UInt32ExLTGT) GetVal() uint32 {
@@ -3434,7 +3258,7 @@ type UInt32GTELTE struct {
 
 func (x *UInt32GTELTE) Reset() {
 	*x = UInt32GTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[75]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[71]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3446,7 +3270,7 @@ func (x *UInt32GTELTE) String() string {
 func (*UInt32GTELTE) ProtoMessage() {}
 
 func (x *UInt32GTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[75]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[71]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3459,7 +3283,7 @@ func (x *UInt32GTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt32GTELTE.ProtoReflect.Descriptor instead.
 func (*UInt32GTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{75}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{71}
 }
 
 func (x *UInt32GTELTE) GetVal() uint32 {
@@ -3478,7 +3302,7 @@ type UInt32ExGTELTE struct {
 
 func (x *UInt32ExGTELTE) Reset() {
 	*x = UInt32ExGTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[76]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[72]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3490,7 +3314,7 @@ func (x *UInt32ExGTELTE) String() string {
 func (*UInt32ExGTELTE) ProtoMessage() {}
 
 func (x *UInt32ExGTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[76]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[72]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3503,7 +3327,7 @@ func (x *UInt32ExGTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt32ExGTELTE.ProtoReflect.Descriptor instead.
 func (*UInt32ExGTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{76}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{72}
 }
 
 func (x *UInt32ExGTELTE) GetVal() uint32 {
@@ -3522,7 +3346,7 @@ type UInt32Ignore struct {
 
 func (x *UInt32Ignore) Reset() {
 	*x = UInt32Ignore{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[77]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[73]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3534,7 +3358,7 @@ func (x *UInt32Ignore) String() string {
 func (*UInt32Ignore) ProtoMessage() {}
 
 func (x *UInt32Ignore) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[77]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[73]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3547,54 +3371,10 @@ func (x *UInt32Ignore) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt32Ignore.ProtoReflect.Descriptor instead.
 func (*UInt32Ignore) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{77}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{73}
 }
 
 func (x *UInt32Ignore) GetVal() uint32 {
-	if x != nil {
-		return x.Val
-	}
-	return 0
-}
-
-type UInt32IncorrectType struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	Val           uint32                 `protobuf:"varint,1,opt,name=val,proto3" json:"val,omitempty"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *UInt32IncorrectType) Reset() {
-	*x = UInt32IncorrectType{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[78]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *UInt32IncorrectType) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*UInt32IncorrectType) ProtoMessage() {}
-
-func (x *UInt32IncorrectType) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[78]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use UInt32IncorrectType.ProtoReflect.Descriptor instead.
-func (*UInt32IncorrectType) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{78}
-}
-
-func (x *UInt32IncorrectType) GetVal() uint32 {
 	if x != nil {
 		return x.Val
 	}
@@ -3610,7 +3390,7 @@ type UInt32Example struct {
 
 func (x *UInt32Example) Reset() {
 	*x = UInt32Example{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[79]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[74]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3622,7 +3402,7 @@ func (x *UInt32Example) String() string {
 func (*UInt32Example) ProtoMessage() {}
 
 func (x *UInt32Example) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[79]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[74]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3635,7 +3415,7 @@ func (x *UInt32Example) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt32Example.ProtoReflect.Descriptor instead.
 func (*UInt32Example) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{79}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{74}
 }
 
 func (x *UInt32Example) GetVal() uint32 {
@@ -3654,7 +3434,7 @@ type UInt64None struct {
 
 func (x *UInt64None) Reset() {
 	*x = UInt64None{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[80]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[75]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3666,7 +3446,7 @@ func (x *UInt64None) String() string {
 func (*UInt64None) ProtoMessage() {}
 
 func (x *UInt64None) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[80]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[75]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3679,7 +3459,7 @@ func (x *UInt64None) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt64None.ProtoReflect.Descriptor instead.
 func (*UInt64None) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{80}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{75}
 }
 
 func (x *UInt64None) GetVal() uint64 {
@@ -3698,7 +3478,7 @@ type UInt64Const struct {
 
 func (x *UInt64Const) Reset() {
 	*x = UInt64Const{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[81]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[76]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3710,7 +3490,7 @@ func (x *UInt64Const) String() string {
 func (*UInt64Const) ProtoMessage() {}
 
 func (x *UInt64Const) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[81]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[76]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3723,7 +3503,7 @@ func (x *UInt64Const) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt64Const.ProtoReflect.Descriptor instead.
 func (*UInt64Const) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{81}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{76}
 }
 
 func (x *UInt64Const) GetVal() uint64 {
@@ -3742,7 +3522,7 @@ type UInt64In struct {
 
 func (x *UInt64In) Reset() {
 	*x = UInt64In{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[82]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[77]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3754,7 +3534,7 @@ func (x *UInt64In) String() string {
 func (*UInt64In) ProtoMessage() {}
 
 func (x *UInt64In) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[82]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[77]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3767,7 +3547,7 @@ func (x *UInt64In) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt64In.ProtoReflect.Descriptor instead.
 func (*UInt64In) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{82}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{77}
 }
 
 func (x *UInt64In) GetVal() uint64 {
@@ -3786,7 +3566,7 @@ type UInt64NotIn struct {
 
 func (x *UInt64NotIn) Reset() {
 	*x = UInt64NotIn{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[83]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[78]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3798,7 +3578,7 @@ func (x *UInt64NotIn) String() string {
 func (*UInt64NotIn) ProtoMessage() {}
 
 func (x *UInt64NotIn) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[83]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[78]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3811,7 +3591,7 @@ func (x *UInt64NotIn) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt64NotIn.ProtoReflect.Descriptor instead.
 func (*UInt64NotIn) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{83}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{78}
 }
 
 func (x *UInt64NotIn) GetVal() uint64 {
@@ -3830,7 +3610,7 @@ type UInt64LT struct {
 
 func (x *UInt64LT) Reset() {
 	*x = UInt64LT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[84]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[79]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3842,7 +3622,7 @@ func (x *UInt64LT) String() string {
 func (*UInt64LT) ProtoMessage() {}
 
 func (x *UInt64LT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[84]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[79]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3855,7 +3635,7 @@ func (x *UInt64LT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt64LT.ProtoReflect.Descriptor instead.
 func (*UInt64LT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{84}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{79}
 }
 
 func (x *UInt64LT) GetVal() uint64 {
@@ -3874,7 +3654,7 @@ type UInt64LTE struct {
 
 func (x *UInt64LTE) Reset() {
 	*x = UInt64LTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[85]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[80]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3886,7 +3666,7 @@ func (x *UInt64LTE) String() string {
 func (*UInt64LTE) ProtoMessage() {}
 
 func (x *UInt64LTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[85]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[80]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3899,7 +3679,7 @@ func (x *UInt64LTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt64LTE.ProtoReflect.Descriptor instead.
 func (*UInt64LTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{85}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{80}
 }
 
 func (x *UInt64LTE) GetVal() uint64 {
@@ -3918,7 +3698,7 @@ type UInt64GT struct {
 
 func (x *UInt64GT) Reset() {
 	*x = UInt64GT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[86]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[81]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3930,7 +3710,7 @@ func (x *UInt64GT) String() string {
 func (*UInt64GT) ProtoMessage() {}
 
 func (x *UInt64GT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[86]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[81]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3943,7 +3723,7 @@ func (x *UInt64GT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt64GT.ProtoReflect.Descriptor instead.
 func (*UInt64GT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{86}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{81}
 }
 
 func (x *UInt64GT) GetVal() uint64 {
@@ -3962,7 +3742,7 @@ type UInt64GTE struct {
 
 func (x *UInt64GTE) Reset() {
 	*x = UInt64GTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[87]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[82]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -3974,7 +3754,7 @@ func (x *UInt64GTE) String() string {
 func (*UInt64GTE) ProtoMessage() {}
 
 func (x *UInt64GTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[87]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[82]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3987,7 +3767,7 @@ func (x *UInt64GTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt64GTE.ProtoReflect.Descriptor instead.
 func (*UInt64GTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{87}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{82}
 }
 
 func (x *UInt64GTE) GetVal() uint64 {
@@ -4006,7 +3786,7 @@ type UInt64GTLT struct {
 
 func (x *UInt64GTLT) Reset() {
 	*x = UInt64GTLT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[88]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[83]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4018,7 +3798,7 @@ func (x *UInt64GTLT) String() string {
 func (*UInt64GTLT) ProtoMessage() {}
 
 func (x *UInt64GTLT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[88]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[83]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4031,7 +3811,7 @@ func (x *UInt64GTLT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt64GTLT.ProtoReflect.Descriptor instead.
 func (*UInt64GTLT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{88}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{83}
 }
 
 func (x *UInt64GTLT) GetVal() uint64 {
@@ -4050,7 +3830,7 @@ type UInt64ExLTGT struct {
 
 func (x *UInt64ExLTGT) Reset() {
 	*x = UInt64ExLTGT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[89]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[84]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4062,7 +3842,7 @@ func (x *UInt64ExLTGT) String() string {
 func (*UInt64ExLTGT) ProtoMessage() {}
 
 func (x *UInt64ExLTGT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[89]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[84]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4075,7 +3855,7 @@ func (x *UInt64ExLTGT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt64ExLTGT.ProtoReflect.Descriptor instead.
 func (*UInt64ExLTGT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{89}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{84}
 }
 
 func (x *UInt64ExLTGT) GetVal() uint64 {
@@ -4094,7 +3874,7 @@ type UInt64GTELTE struct {
 
 func (x *UInt64GTELTE) Reset() {
 	*x = UInt64GTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[90]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[85]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4106,7 +3886,7 @@ func (x *UInt64GTELTE) String() string {
 func (*UInt64GTELTE) ProtoMessage() {}
 
 func (x *UInt64GTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[90]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[85]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4119,7 +3899,7 @@ func (x *UInt64GTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt64GTELTE.ProtoReflect.Descriptor instead.
 func (*UInt64GTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{90}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{85}
 }
 
 func (x *UInt64GTELTE) GetVal() uint64 {
@@ -4138,7 +3918,7 @@ type UInt64ExGTELTE struct {
 
 func (x *UInt64ExGTELTE) Reset() {
 	*x = UInt64ExGTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[91]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[86]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4150,7 +3930,7 @@ func (x *UInt64ExGTELTE) String() string {
 func (*UInt64ExGTELTE) ProtoMessage() {}
 
 func (x *UInt64ExGTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[91]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[86]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4163,7 +3943,7 @@ func (x *UInt64ExGTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt64ExGTELTE.ProtoReflect.Descriptor instead.
 func (*UInt64ExGTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{91}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{86}
 }
 
 func (x *UInt64ExGTELTE) GetVal() uint64 {
@@ -4182,7 +3962,7 @@ type UInt64Ignore struct {
 
 func (x *UInt64Ignore) Reset() {
 	*x = UInt64Ignore{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[92]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[87]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4194,7 +3974,7 @@ func (x *UInt64Ignore) String() string {
 func (*UInt64Ignore) ProtoMessage() {}
 
 func (x *UInt64Ignore) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[92]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[87]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4207,54 +3987,10 @@ func (x *UInt64Ignore) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt64Ignore.ProtoReflect.Descriptor instead.
 func (*UInt64Ignore) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{92}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{87}
 }
 
 func (x *UInt64Ignore) GetVal() uint64 {
-	if x != nil {
-		return x.Val
-	}
-	return 0
-}
-
-type UInt64IncorrectType struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	Val           uint64                 `protobuf:"varint,1,opt,name=val,proto3" json:"val,omitempty"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *UInt64IncorrectType) Reset() {
-	*x = UInt64IncorrectType{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[93]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *UInt64IncorrectType) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*UInt64IncorrectType) ProtoMessage() {}
-
-func (x *UInt64IncorrectType) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[93]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use UInt64IncorrectType.ProtoReflect.Descriptor instead.
-func (*UInt64IncorrectType) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{93}
-}
-
-func (x *UInt64IncorrectType) GetVal() uint64 {
 	if x != nil {
 		return x.Val
 	}
@@ -4270,7 +4006,7 @@ type UInt64Example struct {
 
 func (x *UInt64Example) Reset() {
 	*x = UInt64Example{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[94]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[88]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4282,7 +4018,7 @@ func (x *UInt64Example) String() string {
 func (*UInt64Example) ProtoMessage() {}
 
 func (x *UInt64Example) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[94]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[88]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4295,7 +4031,7 @@ func (x *UInt64Example) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use UInt64Example.ProtoReflect.Descriptor instead.
 func (*UInt64Example) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{94}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{88}
 }
 
 func (x *UInt64Example) GetVal() uint64 {
@@ -4314,7 +4050,7 @@ type SInt32None struct {
 
 func (x *SInt32None) Reset() {
 	*x = SInt32None{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[95]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[89]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4326,7 +4062,7 @@ func (x *SInt32None) String() string {
 func (*SInt32None) ProtoMessage() {}
 
 func (x *SInt32None) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[95]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[89]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4339,7 +4075,7 @@ func (x *SInt32None) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt32None.ProtoReflect.Descriptor instead.
 func (*SInt32None) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{95}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{89}
 }
 
 func (x *SInt32None) GetVal() int32 {
@@ -4358,7 +4094,7 @@ type SInt32Const struct {
 
 func (x *SInt32Const) Reset() {
 	*x = SInt32Const{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[96]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[90]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4370,7 +4106,7 @@ func (x *SInt32Const) String() string {
 func (*SInt32Const) ProtoMessage() {}
 
 func (x *SInt32Const) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[96]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[90]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4383,7 +4119,7 @@ func (x *SInt32Const) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt32Const.ProtoReflect.Descriptor instead.
 func (*SInt32Const) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{96}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{90}
 }
 
 func (x *SInt32Const) GetVal() int32 {
@@ -4402,7 +4138,7 @@ type SInt32In struct {
 
 func (x *SInt32In) Reset() {
 	*x = SInt32In{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[97]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[91]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4414,7 +4150,7 @@ func (x *SInt32In) String() string {
 func (*SInt32In) ProtoMessage() {}
 
 func (x *SInt32In) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[97]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[91]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4427,7 +4163,7 @@ func (x *SInt32In) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt32In.ProtoReflect.Descriptor instead.
 func (*SInt32In) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{97}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{91}
 }
 
 func (x *SInt32In) GetVal() int32 {
@@ -4446,7 +4182,7 @@ type SInt32NotIn struct {
 
 func (x *SInt32NotIn) Reset() {
 	*x = SInt32NotIn{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[98]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[92]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4458,7 +4194,7 @@ func (x *SInt32NotIn) String() string {
 func (*SInt32NotIn) ProtoMessage() {}
 
 func (x *SInt32NotIn) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[98]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[92]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4471,7 +4207,7 @@ func (x *SInt32NotIn) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt32NotIn.ProtoReflect.Descriptor instead.
 func (*SInt32NotIn) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{98}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{92}
 }
 
 func (x *SInt32NotIn) GetVal() int32 {
@@ -4490,7 +4226,7 @@ type SInt32LT struct {
 
 func (x *SInt32LT) Reset() {
 	*x = SInt32LT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[99]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[93]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4502,7 +4238,7 @@ func (x *SInt32LT) String() string {
 func (*SInt32LT) ProtoMessage() {}
 
 func (x *SInt32LT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[99]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[93]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4515,7 +4251,7 @@ func (x *SInt32LT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt32LT.ProtoReflect.Descriptor instead.
 func (*SInt32LT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{99}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{93}
 }
 
 func (x *SInt32LT) GetVal() int32 {
@@ -4534,7 +4270,7 @@ type SInt32LTE struct {
 
 func (x *SInt32LTE) Reset() {
 	*x = SInt32LTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[100]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[94]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4546,7 +4282,7 @@ func (x *SInt32LTE) String() string {
 func (*SInt32LTE) ProtoMessage() {}
 
 func (x *SInt32LTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[100]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[94]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4559,7 +4295,7 @@ func (x *SInt32LTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt32LTE.ProtoReflect.Descriptor instead.
 func (*SInt32LTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{100}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{94}
 }
 
 func (x *SInt32LTE) GetVal() int32 {
@@ -4578,7 +4314,7 @@ type SInt32GT struct {
 
 func (x *SInt32GT) Reset() {
 	*x = SInt32GT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[101]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[95]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4590,7 +4326,7 @@ func (x *SInt32GT) String() string {
 func (*SInt32GT) ProtoMessage() {}
 
 func (x *SInt32GT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[101]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[95]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4603,7 +4339,7 @@ func (x *SInt32GT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt32GT.ProtoReflect.Descriptor instead.
 func (*SInt32GT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{101}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{95}
 }
 
 func (x *SInt32GT) GetVal() int32 {
@@ -4622,7 +4358,7 @@ type SInt32GTE struct {
 
 func (x *SInt32GTE) Reset() {
 	*x = SInt32GTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[102]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[96]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4634,7 +4370,7 @@ func (x *SInt32GTE) String() string {
 func (*SInt32GTE) ProtoMessage() {}
 
 func (x *SInt32GTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[102]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[96]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4647,7 +4383,7 @@ func (x *SInt32GTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt32GTE.ProtoReflect.Descriptor instead.
 func (*SInt32GTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{102}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{96}
 }
 
 func (x *SInt32GTE) GetVal() int32 {
@@ -4666,7 +4402,7 @@ type SInt32GTLT struct {
 
 func (x *SInt32GTLT) Reset() {
 	*x = SInt32GTLT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[103]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[97]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4678,7 +4414,7 @@ func (x *SInt32GTLT) String() string {
 func (*SInt32GTLT) ProtoMessage() {}
 
 func (x *SInt32GTLT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[103]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[97]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4691,7 +4427,7 @@ func (x *SInt32GTLT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt32GTLT.ProtoReflect.Descriptor instead.
 func (*SInt32GTLT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{103}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{97}
 }
 
 func (x *SInt32GTLT) GetVal() int32 {
@@ -4710,7 +4446,7 @@ type SInt32ExLTGT struct {
 
 func (x *SInt32ExLTGT) Reset() {
 	*x = SInt32ExLTGT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[104]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[98]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4722,7 +4458,7 @@ func (x *SInt32ExLTGT) String() string {
 func (*SInt32ExLTGT) ProtoMessage() {}
 
 func (x *SInt32ExLTGT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[104]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[98]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4735,7 +4471,7 @@ func (x *SInt32ExLTGT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt32ExLTGT.ProtoReflect.Descriptor instead.
 func (*SInt32ExLTGT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{104}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{98}
 }
 
 func (x *SInt32ExLTGT) GetVal() int32 {
@@ -4754,7 +4490,7 @@ type SInt32GTELTE struct {
 
 func (x *SInt32GTELTE) Reset() {
 	*x = SInt32GTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[105]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[99]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4766,7 +4502,7 @@ func (x *SInt32GTELTE) String() string {
 func (*SInt32GTELTE) ProtoMessage() {}
 
 func (x *SInt32GTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[105]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[99]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4779,7 +4515,7 @@ func (x *SInt32GTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt32GTELTE.ProtoReflect.Descriptor instead.
 func (*SInt32GTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{105}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{99}
 }
 
 func (x *SInt32GTELTE) GetVal() int32 {
@@ -4798,7 +4534,7 @@ type SInt32ExGTELTE struct {
 
 func (x *SInt32ExGTELTE) Reset() {
 	*x = SInt32ExGTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[106]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[100]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4810,7 +4546,7 @@ func (x *SInt32ExGTELTE) String() string {
 func (*SInt32ExGTELTE) ProtoMessage() {}
 
 func (x *SInt32ExGTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[106]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[100]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4823,7 +4559,7 @@ func (x *SInt32ExGTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt32ExGTELTE.ProtoReflect.Descriptor instead.
 func (*SInt32ExGTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{106}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{100}
 }
 
 func (x *SInt32ExGTELTE) GetVal() int32 {
@@ -4842,7 +4578,7 @@ type SInt32Ignore struct {
 
 func (x *SInt32Ignore) Reset() {
 	*x = SInt32Ignore{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[107]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[101]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4854,7 +4590,7 @@ func (x *SInt32Ignore) String() string {
 func (*SInt32Ignore) ProtoMessage() {}
 
 func (x *SInt32Ignore) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[107]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[101]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4867,54 +4603,10 @@ func (x *SInt32Ignore) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt32Ignore.ProtoReflect.Descriptor instead.
 func (*SInt32Ignore) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{107}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{101}
 }
 
 func (x *SInt32Ignore) GetVal() int32 {
-	if x != nil {
-		return x.Val
-	}
-	return 0
-}
-
-type SInt32IncorrectType struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	Val           int32                  `protobuf:"zigzag32,1,opt,name=val,proto3" json:"val,omitempty"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *SInt32IncorrectType) Reset() {
-	*x = SInt32IncorrectType{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[108]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *SInt32IncorrectType) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*SInt32IncorrectType) ProtoMessage() {}
-
-func (x *SInt32IncorrectType) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[108]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use SInt32IncorrectType.ProtoReflect.Descriptor instead.
-func (*SInt32IncorrectType) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{108}
-}
-
-func (x *SInt32IncorrectType) GetVal() int32 {
 	if x != nil {
 		return x.Val
 	}
@@ -4930,7 +4622,7 @@ type SInt32Example struct {
 
 func (x *SInt32Example) Reset() {
 	*x = SInt32Example{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[109]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[102]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4942,7 +4634,7 @@ func (x *SInt32Example) String() string {
 func (*SInt32Example) ProtoMessage() {}
 
 func (x *SInt32Example) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[109]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[102]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4955,7 +4647,7 @@ func (x *SInt32Example) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt32Example.ProtoReflect.Descriptor instead.
 func (*SInt32Example) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{109}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{102}
 }
 
 func (x *SInt32Example) GetVal() int32 {
@@ -4974,7 +4666,7 @@ type SInt64None struct {
 
 func (x *SInt64None) Reset() {
 	*x = SInt64None{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[110]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[103]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -4986,7 +4678,7 @@ func (x *SInt64None) String() string {
 func (*SInt64None) ProtoMessage() {}
 
 func (x *SInt64None) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[110]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[103]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4999,7 +4691,7 @@ func (x *SInt64None) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt64None.ProtoReflect.Descriptor instead.
 func (*SInt64None) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{110}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{103}
 }
 
 func (x *SInt64None) GetVal() int64 {
@@ -5018,7 +4710,7 @@ type SInt64Const struct {
 
 func (x *SInt64Const) Reset() {
 	*x = SInt64Const{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[111]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[104]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5030,7 +4722,7 @@ func (x *SInt64Const) String() string {
 func (*SInt64Const) ProtoMessage() {}
 
 func (x *SInt64Const) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[111]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[104]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5043,7 +4735,7 @@ func (x *SInt64Const) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt64Const.ProtoReflect.Descriptor instead.
 func (*SInt64Const) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{111}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{104}
 }
 
 func (x *SInt64Const) GetVal() int64 {
@@ -5062,7 +4754,7 @@ type SInt64In struct {
 
 func (x *SInt64In) Reset() {
 	*x = SInt64In{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[112]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[105]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5074,7 +4766,7 @@ func (x *SInt64In) String() string {
 func (*SInt64In) ProtoMessage() {}
 
 func (x *SInt64In) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[112]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[105]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5087,7 +4779,7 @@ func (x *SInt64In) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt64In.ProtoReflect.Descriptor instead.
 func (*SInt64In) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{112}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{105}
 }
 
 func (x *SInt64In) GetVal() int64 {
@@ -5106,7 +4798,7 @@ type SInt64NotIn struct {
 
 func (x *SInt64NotIn) Reset() {
 	*x = SInt64NotIn{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[113]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[106]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5118,7 +4810,7 @@ func (x *SInt64NotIn) String() string {
 func (*SInt64NotIn) ProtoMessage() {}
 
 func (x *SInt64NotIn) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[113]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[106]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5131,7 +4823,7 @@ func (x *SInt64NotIn) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt64NotIn.ProtoReflect.Descriptor instead.
 func (*SInt64NotIn) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{113}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{106}
 }
 
 func (x *SInt64NotIn) GetVal() int64 {
@@ -5150,7 +4842,7 @@ type SInt64LT struct {
 
 func (x *SInt64LT) Reset() {
 	*x = SInt64LT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[114]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[107]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5162,7 +4854,7 @@ func (x *SInt64LT) String() string {
 func (*SInt64LT) ProtoMessage() {}
 
 func (x *SInt64LT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[114]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[107]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5175,7 +4867,7 @@ func (x *SInt64LT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt64LT.ProtoReflect.Descriptor instead.
 func (*SInt64LT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{114}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{107}
 }
 
 func (x *SInt64LT) GetVal() int64 {
@@ -5194,7 +4886,7 @@ type SInt64LTE struct {
 
 func (x *SInt64LTE) Reset() {
 	*x = SInt64LTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[115]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[108]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5206,7 +4898,7 @@ func (x *SInt64LTE) String() string {
 func (*SInt64LTE) ProtoMessage() {}
 
 func (x *SInt64LTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[115]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[108]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5219,7 +4911,7 @@ func (x *SInt64LTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt64LTE.ProtoReflect.Descriptor instead.
 func (*SInt64LTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{115}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{108}
 }
 
 func (x *SInt64LTE) GetVal() int64 {
@@ -5238,7 +4930,7 @@ type SInt64GT struct {
 
 func (x *SInt64GT) Reset() {
 	*x = SInt64GT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[116]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[109]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5250,7 +4942,7 @@ func (x *SInt64GT) String() string {
 func (*SInt64GT) ProtoMessage() {}
 
 func (x *SInt64GT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[116]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[109]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5263,7 +4955,7 @@ func (x *SInt64GT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt64GT.ProtoReflect.Descriptor instead.
 func (*SInt64GT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{116}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{109}
 }
 
 func (x *SInt64GT) GetVal() int64 {
@@ -5282,7 +4974,7 @@ type SInt64GTE struct {
 
 func (x *SInt64GTE) Reset() {
 	*x = SInt64GTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[117]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[110]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5294,7 +4986,7 @@ func (x *SInt64GTE) String() string {
 func (*SInt64GTE) ProtoMessage() {}
 
 func (x *SInt64GTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[117]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[110]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5307,7 +4999,7 @@ func (x *SInt64GTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt64GTE.ProtoReflect.Descriptor instead.
 func (*SInt64GTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{117}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{110}
 }
 
 func (x *SInt64GTE) GetVal() int64 {
@@ -5326,7 +5018,7 @@ type SInt64GTLT struct {
 
 func (x *SInt64GTLT) Reset() {
 	*x = SInt64GTLT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[118]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[111]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5338,7 +5030,7 @@ func (x *SInt64GTLT) String() string {
 func (*SInt64GTLT) ProtoMessage() {}
 
 func (x *SInt64GTLT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[118]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[111]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5351,7 +5043,7 @@ func (x *SInt64GTLT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt64GTLT.ProtoReflect.Descriptor instead.
 func (*SInt64GTLT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{118}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{111}
 }
 
 func (x *SInt64GTLT) GetVal() int64 {
@@ -5370,7 +5062,7 @@ type SInt64ExLTGT struct {
 
 func (x *SInt64ExLTGT) Reset() {
 	*x = SInt64ExLTGT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[119]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[112]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5382,7 +5074,7 @@ func (x *SInt64ExLTGT) String() string {
 func (*SInt64ExLTGT) ProtoMessage() {}
 
 func (x *SInt64ExLTGT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[119]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[112]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5395,7 +5087,7 @@ func (x *SInt64ExLTGT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt64ExLTGT.ProtoReflect.Descriptor instead.
 func (*SInt64ExLTGT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{119}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{112}
 }
 
 func (x *SInt64ExLTGT) GetVal() int64 {
@@ -5414,7 +5106,7 @@ type SInt64GTELTE struct {
 
 func (x *SInt64GTELTE) Reset() {
 	*x = SInt64GTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[120]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[113]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5426,7 +5118,7 @@ func (x *SInt64GTELTE) String() string {
 func (*SInt64GTELTE) ProtoMessage() {}
 
 func (x *SInt64GTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[120]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[113]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5439,7 +5131,7 @@ func (x *SInt64GTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt64GTELTE.ProtoReflect.Descriptor instead.
 func (*SInt64GTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{120}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{113}
 }
 
 func (x *SInt64GTELTE) GetVal() int64 {
@@ -5458,7 +5150,7 @@ type SInt64ExGTELTE struct {
 
 func (x *SInt64ExGTELTE) Reset() {
 	*x = SInt64ExGTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[121]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[114]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5470,7 +5162,7 @@ func (x *SInt64ExGTELTE) String() string {
 func (*SInt64ExGTELTE) ProtoMessage() {}
 
 func (x *SInt64ExGTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[121]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[114]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5483,7 +5175,7 @@ func (x *SInt64ExGTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt64ExGTELTE.ProtoReflect.Descriptor instead.
 func (*SInt64ExGTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{121}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{114}
 }
 
 func (x *SInt64ExGTELTE) GetVal() int64 {
@@ -5502,7 +5194,7 @@ type SInt64Ignore struct {
 
 func (x *SInt64Ignore) Reset() {
 	*x = SInt64Ignore{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[122]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[115]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5514,7 +5206,7 @@ func (x *SInt64Ignore) String() string {
 func (*SInt64Ignore) ProtoMessage() {}
 
 func (x *SInt64Ignore) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[122]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[115]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5527,54 +5219,10 @@ func (x *SInt64Ignore) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt64Ignore.ProtoReflect.Descriptor instead.
 func (*SInt64Ignore) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{122}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{115}
 }
 
 func (x *SInt64Ignore) GetVal() int64 {
-	if x != nil {
-		return x.Val
-	}
-	return 0
-}
-
-type SInt64IncorrectType struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	Val           int64                  `protobuf:"zigzag64,1,opt,name=val,proto3" json:"val,omitempty"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *SInt64IncorrectType) Reset() {
-	*x = SInt64IncorrectType{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[123]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *SInt64IncorrectType) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*SInt64IncorrectType) ProtoMessage() {}
-
-func (x *SInt64IncorrectType) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[123]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use SInt64IncorrectType.ProtoReflect.Descriptor instead.
-func (*SInt64IncorrectType) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{123}
-}
-
-func (x *SInt64IncorrectType) GetVal() int64 {
 	if x != nil {
 		return x.Val
 	}
@@ -5590,7 +5238,7 @@ type SInt64Example struct {
 
 func (x *SInt64Example) Reset() {
 	*x = SInt64Example{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[124]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[116]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5602,7 +5250,7 @@ func (x *SInt64Example) String() string {
 func (*SInt64Example) ProtoMessage() {}
 
 func (x *SInt64Example) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[124]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[116]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5615,7 +5263,7 @@ func (x *SInt64Example) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SInt64Example.ProtoReflect.Descriptor instead.
 func (*SInt64Example) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{124}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{116}
 }
 
 func (x *SInt64Example) GetVal() int64 {
@@ -5634,7 +5282,7 @@ type Fixed32None struct {
 
 func (x *Fixed32None) Reset() {
 	*x = Fixed32None{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[125]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[117]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5646,7 +5294,7 @@ func (x *Fixed32None) String() string {
 func (*Fixed32None) ProtoMessage() {}
 
 func (x *Fixed32None) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[125]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[117]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5659,7 +5307,7 @@ func (x *Fixed32None) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed32None.ProtoReflect.Descriptor instead.
 func (*Fixed32None) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{125}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{117}
 }
 
 func (x *Fixed32None) GetVal() uint32 {
@@ -5678,7 +5326,7 @@ type Fixed32Const struct {
 
 func (x *Fixed32Const) Reset() {
 	*x = Fixed32Const{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[126]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[118]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5690,7 +5338,7 @@ func (x *Fixed32Const) String() string {
 func (*Fixed32Const) ProtoMessage() {}
 
 func (x *Fixed32Const) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[126]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[118]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5703,7 +5351,7 @@ func (x *Fixed32Const) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed32Const.ProtoReflect.Descriptor instead.
 func (*Fixed32Const) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{126}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{118}
 }
 
 func (x *Fixed32Const) GetVal() uint32 {
@@ -5722,7 +5370,7 @@ type Fixed32In struct {
 
 func (x *Fixed32In) Reset() {
 	*x = Fixed32In{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[127]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[119]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5734,7 +5382,7 @@ func (x *Fixed32In) String() string {
 func (*Fixed32In) ProtoMessage() {}
 
 func (x *Fixed32In) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[127]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[119]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5747,7 +5395,7 @@ func (x *Fixed32In) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed32In.ProtoReflect.Descriptor instead.
 func (*Fixed32In) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{127}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{119}
 }
 
 func (x *Fixed32In) GetVal() uint32 {
@@ -5766,7 +5414,7 @@ type Fixed32NotIn struct {
 
 func (x *Fixed32NotIn) Reset() {
 	*x = Fixed32NotIn{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[128]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[120]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5778,7 +5426,7 @@ func (x *Fixed32NotIn) String() string {
 func (*Fixed32NotIn) ProtoMessage() {}
 
 func (x *Fixed32NotIn) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[128]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[120]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5791,7 +5439,7 @@ func (x *Fixed32NotIn) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed32NotIn.ProtoReflect.Descriptor instead.
 func (*Fixed32NotIn) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{128}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{120}
 }
 
 func (x *Fixed32NotIn) GetVal() uint32 {
@@ -5810,7 +5458,7 @@ type Fixed32LT struct {
 
 func (x *Fixed32LT) Reset() {
 	*x = Fixed32LT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[129]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[121]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5822,7 +5470,7 @@ func (x *Fixed32LT) String() string {
 func (*Fixed32LT) ProtoMessage() {}
 
 func (x *Fixed32LT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[129]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[121]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5835,7 +5483,7 @@ func (x *Fixed32LT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed32LT.ProtoReflect.Descriptor instead.
 func (*Fixed32LT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{129}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{121}
 }
 
 func (x *Fixed32LT) GetVal() uint32 {
@@ -5854,7 +5502,7 @@ type Fixed32LTE struct {
 
 func (x *Fixed32LTE) Reset() {
 	*x = Fixed32LTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[130]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[122]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5866,7 +5514,7 @@ func (x *Fixed32LTE) String() string {
 func (*Fixed32LTE) ProtoMessage() {}
 
 func (x *Fixed32LTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[130]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[122]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5879,7 +5527,7 @@ func (x *Fixed32LTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed32LTE.ProtoReflect.Descriptor instead.
 func (*Fixed32LTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{130}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{122}
 }
 
 func (x *Fixed32LTE) GetVal() uint32 {
@@ -5898,7 +5546,7 @@ type Fixed32GT struct {
 
 func (x *Fixed32GT) Reset() {
 	*x = Fixed32GT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[131]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[123]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5910,7 +5558,7 @@ func (x *Fixed32GT) String() string {
 func (*Fixed32GT) ProtoMessage() {}
 
 func (x *Fixed32GT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[131]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[123]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5923,7 +5571,7 @@ func (x *Fixed32GT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed32GT.ProtoReflect.Descriptor instead.
 func (*Fixed32GT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{131}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{123}
 }
 
 func (x *Fixed32GT) GetVal() uint32 {
@@ -5942,7 +5590,7 @@ type Fixed32GTE struct {
 
 func (x *Fixed32GTE) Reset() {
 	*x = Fixed32GTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[132]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[124]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5954,7 +5602,7 @@ func (x *Fixed32GTE) String() string {
 func (*Fixed32GTE) ProtoMessage() {}
 
 func (x *Fixed32GTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[132]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[124]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -5967,7 +5615,7 @@ func (x *Fixed32GTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed32GTE.ProtoReflect.Descriptor instead.
 func (*Fixed32GTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{132}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{124}
 }
 
 func (x *Fixed32GTE) GetVal() uint32 {
@@ -5986,7 +5634,7 @@ type Fixed32GTLT struct {
 
 func (x *Fixed32GTLT) Reset() {
 	*x = Fixed32GTLT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[133]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[125]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -5998,7 +5646,7 @@ func (x *Fixed32GTLT) String() string {
 func (*Fixed32GTLT) ProtoMessage() {}
 
 func (x *Fixed32GTLT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[133]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[125]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6011,7 +5659,7 @@ func (x *Fixed32GTLT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed32GTLT.ProtoReflect.Descriptor instead.
 func (*Fixed32GTLT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{133}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{125}
 }
 
 func (x *Fixed32GTLT) GetVal() uint32 {
@@ -6030,7 +5678,7 @@ type Fixed32ExLTGT struct {
 
 func (x *Fixed32ExLTGT) Reset() {
 	*x = Fixed32ExLTGT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[134]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[126]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6042,7 +5690,7 @@ func (x *Fixed32ExLTGT) String() string {
 func (*Fixed32ExLTGT) ProtoMessage() {}
 
 func (x *Fixed32ExLTGT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[134]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[126]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6055,7 +5703,7 @@ func (x *Fixed32ExLTGT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed32ExLTGT.ProtoReflect.Descriptor instead.
 func (*Fixed32ExLTGT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{134}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{126}
 }
 
 func (x *Fixed32ExLTGT) GetVal() uint32 {
@@ -6074,7 +5722,7 @@ type Fixed32GTELTE struct {
 
 func (x *Fixed32GTELTE) Reset() {
 	*x = Fixed32GTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[135]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[127]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6086,7 +5734,7 @@ func (x *Fixed32GTELTE) String() string {
 func (*Fixed32GTELTE) ProtoMessage() {}
 
 func (x *Fixed32GTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[135]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[127]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6099,7 +5747,7 @@ func (x *Fixed32GTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed32GTELTE.ProtoReflect.Descriptor instead.
 func (*Fixed32GTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{135}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{127}
 }
 
 func (x *Fixed32GTELTE) GetVal() uint32 {
@@ -6118,7 +5766,7 @@ type Fixed32ExGTELTE struct {
 
 func (x *Fixed32ExGTELTE) Reset() {
 	*x = Fixed32ExGTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[136]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[128]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6130,7 +5778,7 @@ func (x *Fixed32ExGTELTE) String() string {
 func (*Fixed32ExGTELTE) ProtoMessage() {}
 
 func (x *Fixed32ExGTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[136]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[128]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6143,7 +5791,7 @@ func (x *Fixed32ExGTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed32ExGTELTE.ProtoReflect.Descriptor instead.
 func (*Fixed32ExGTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{136}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{128}
 }
 
 func (x *Fixed32ExGTELTE) GetVal() uint32 {
@@ -6162,7 +5810,7 @@ type Fixed32Ignore struct {
 
 func (x *Fixed32Ignore) Reset() {
 	*x = Fixed32Ignore{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[137]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[129]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6174,7 +5822,7 @@ func (x *Fixed32Ignore) String() string {
 func (*Fixed32Ignore) ProtoMessage() {}
 
 func (x *Fixed32Ignore) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[137]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[129]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6187,54 +5835,10 @@ func (x *Fixed32Ignore) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed32Ignore.ProtoReflect.Descriptor instead.
 func (*Fixed32Ignore) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{137}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{129}
 }
 
 func (x *Fixed32Ignore) GetVal() uint32 {
-	if x != nil {
-		return x.Val
-	}
-	return 0
-}
-
-type Fixed32IncorrectType struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	Val           uint32                 `protobuf:"fixed32,1,opt,name=val,proto3" json:"val,omitempty"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *Fixed32IncorrectType) Reset() {
-	*x = Fixed32IncorrectType{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[138]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *Fixed32IncorrectType) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*Fixed32IncorrectType) ProtoMessage() {}
-
-func (x *Fixed32IncorrectType) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[138]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use Fixed32IncorrectType.ProtoReflect.Descriptor instead.
-func (*Fixed32IncorrectType) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{138}
-}
-
-func (x *Fixed32IncorrectType) GetVal() uint32 {
 	if x != nil {
 		return x.Val
 	}
@@ -6250,7 +5854,7 @@ type Fixed32Example struct {
 
 func (x *Fixed32Example) Reset() {
 	*x = Fixed32Example{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[139]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[130]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6262,7 +5866,7 @@ func (x *Fixed32Example) String() string {
 func (*Fixed32Example) ProtoMessage() {}
 
 func (x *Fixed32Example) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[139]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[130]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6275,7 +5879,7 @@ func (x *Fixed32Example) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed32Example.ProtoReflect.Descriptor instead.
 func (*Fixed32Example) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{139}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{130}
 }
 
 func (x *Fixed32Example) GetVal() uint32 {
@@ -6294,7 +5898,7 @@ type Fixed64None struct {
 
 func (x *Fixed64None) Reset() {
 	*x = Fixed64None{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[140]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[131]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6306,7 +5910,7 @@ func (x *Fixed64None) String() string {
 func (*Fixed64None) ProtoMessage() {}
 
 func (x *Fixed64None) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[140]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[131]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6319,7 +5923,7 @@ func (x *Fixed64None) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed64None.ProtoReflect.Descriptor instead.
 func (*Fixed64None) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{140}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{131}
 }
 
 func (x *Fixed64None) GetVal() uint64 {
@@ -6338,7 +5942,7 @@ type Fixed64Const struct {
 
 func (x *Fixed64Const) Reset() {
 	*x = Fixed64Const{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[141]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[132]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6350,7 +5954,7 @@ func (x *Fixed64Const) String() string {
 func (*Fixed64Const) ProtoMessage() {}
 
 func (x *Fixed64Const) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[141]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[132]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6363,7 +5967,7 @@ func (x *Fixed64Const) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed64Const.ProtoReflect.Descriptor instead.
 func (*Fixed64Const) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{141}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{132}
 }
 
 func (x *Fixed64Const) GetVal() uint64 {
@@ -6382,7 +5986,7 @@ type Fixed64In struct {
 
 func (x *Fixed64In) Reset() {
 	*x = Fixed64In{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[142]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[133]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6394,7 +5998,7 @@ func (x *Fixed64In) String() string {
 func (*Fixed64In) ProtoMessage() {}
 
 func (x *Fixed64In) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[142]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[133]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6407,7 +6011,7 @@ func (x *Fixed64In) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed64In.ProtoReflect.Descriptor instead.
 func (*Fixed64In) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{142}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{133}
 }
 
 func (x *Fixed64In) GetVal() uint64 {
@@ -6426,7 +6030,7 @@ type Fixed64NotIn struct {
 
 func (x *Fixed64NotIn) Reset() {
 	*x = Fixed64NotIn{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[143]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[134]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6438,7 +6042,7 @@ func (x *Fixed64NotIn) String() string {
 func (*Fixed64NotIn) ProtoMessage() {}
 
 func (x *Fixed64NotIn) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[143]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[134]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6451,7 +6055,7 @@ func (x *Fixed64NotIn) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed64NotIn.ProtoReflect.Descriptor instead.
 func (*Fixed64NotIn) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{143}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{134}
 }
 
 func (x *Fixed64NotIn) GetVal() uint64 {
@@ -6470,7 +6074,7 @@ type Fixed64LT struct {
 
 func (x *Fixed64LT) Reset() {
 	*x = Fixed64LT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[144]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[135]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6482,7 +6086,7 @@ func (x *Fixed64LT) String() string {
 func (*Fixed64LT) ProtoMessage() {}
 
 func (x *Fixed64LT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[144]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[135]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6495,7 +6099,7 @@ func (x *Fixed64LT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed64LT.ProtoReflect.Descriptor instead.
 func (*Fixed64LT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{144}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{135}
 }
 
 func (x *Fixed64LT) GetVal() uint64 {
@@ -6514,7 +6118,7 @@ type Fixed64LTE struct {
 
 func (x *Fixed64LTE) Reset() {
 	*x = Fixed64LTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[145]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[136]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6526,7 +6130,7 @@ func (x *Fixed64LTE) String() string {
 func (*Fixed64LTE) ProtoMessage() {}
 
 func (x *Fixed64LTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[145]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[136]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6539,7 +6143,7 @@ func (x *Fixed64LTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed64LTE.ProtoReflect.Descriptor instead.
 func (*Fixed64LTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{145}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{136}
 }
 
 func (x *Fixed64LTE) GetVal() uint64 {
@@ -6558,7 +6162,7 @@ type Fixed64GT struct {
 
 func (x *Fixed64GT) Reset() {
 	*x = Fixed64GT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[146]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[137]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6570,7 +6174,7 @@ func (x *Fixed64GT) String() string {
 func (*Fixed64GT) ProtoMessage() {}
 
 func (x *Fixed64GT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[146]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[137]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6583,7 +6187,7 @@ func (x *Fixed64GT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed64GT.ProtoReflect.Descriptor instead.
 func (*Fixed64GT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{146}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{137}
 }
 
 func (x *Fixed64GT) GetVal() uint64 {
@@ -6602,7 +6206,7 @@ type Fixed64GTE struct {
 
 func (x *Fixed64GTE) Reset() {
 	*x = Fixed64GTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[147]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[138]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6614,7 +6218,7 @@ func (x *Fixed64GTE) String() string {
 func (*Fixed64GTE) ProtoMessage() {}
 
 func (x *Fixed64GTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[147]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[138]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6627,7 +6231,7 @@ func (x *Fixed64GTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed64GTE.ProtoReflect.Descriptor instead.
 func (*Fixed64GTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{147}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{138}
 }
 
 func (x *Fixed64GTE) GetVal() uint64 {
@@ -6646,7 +6250,7 @@ type Fixed64GTLT struct {
 
 func (x *Fixed64GTLT) Reset() {
 	*x = Fixed64GTLT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[148]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[139]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6658,7 +6262,7 @@ func (x *Fixed64GTLT) String() string {
 func (*Fixed64GTLT) ProtoMessage() {}
 
 func (x *Fixed64GTLT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[148]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[139]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6671,7 +6275,7 @@ func (x *Fixed64GTLT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed64GTLT.ProtoReflect.Descriptor instead.
 func (*Fixed64GTLT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{148}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{139}
 }
 
 func (x *Fixed64GTLT) GetVal() uint64 {
@@ -6690,7 +6294,7 @@ type Fixed64ExLTGT struct {
 
 func (x *Fixed64ExLTGT) Reset() {
 	*x = Fixed64ExLTGT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[149]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[140]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6702,7 +6306,7 @@ func (x *Fixed64ExLTGT) String() string {
 func (*Fixed64ExLTGT) ProtoMessage() {}
 
 func (x *Fixed64ExLTGT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[149]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[140]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6715,7 +6319,7 @@ func (x *Fixed64ExLTGT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed64ExLTGT.ProtoReflect.Descriptor instead.
 func (*Fixed64ExLTGT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{149}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{140}
 }
 
 func (x *Fixed64ExLTGT) GetVal() uint64 {
@@ -6734,7 +6338,7 @@ type Fixed64GTELTE struct {
 
 func (x *Fixed64GTELTE) Reset() {
 	*x = Fixed64GTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[150]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[141]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6746,7 +6350,7 @@ func (x *Fixed64GTELTE) String() string {
 func (*Fixed64GTELTE) ProtoMessage() {}
 
 func (x *Fixed64GTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[150]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[141]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6759,7 +6363,7 @@ func (x *Fixed64GTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed64GTELTE.ProtoReflect.Descriptor instead.
 func (*Fixed64GTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{150}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{141}
 }
 
 func (x *Fixed64GTELTE) GetVal() uint64 {
@@ -6778,7 +6382,7 @@ type Fixed64ExGTELTE struct {
 
 func (x *Fixed64ExGTELTE) Reset() {
 	*x = Fixed64ExGTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[151]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[142]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6790,7 +6394,7 @@ func (x *Fixed64ExGTELTE) String() string {
 func (*Fixed64ExGTELTE) ProtoMessage() {}
 
 func (x *Fixed64ExGTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[151]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[142]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6803,7 +6407,7 @@ func (x *Fixed64ExGTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed64ExGTELTE.ProtoReflect.Descriptor instead.
 func (*Fixed64ExGTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{151}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{142}
 }
 
 func (x *Fixed64ExGTELTE) GetVal() uint64 {
@@ -6822,7 +6426,7 @@ type Fixed64Ignore struct {
 
 func (x *Fixed64Ignore) Reset() {
 	*x = Fixed64Ignore{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[152]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[143]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6834,7 +6438,7 @@ func (x *Fixed64Ignore) String() string {
 func (*Fixed64Ignore) ProtoMessage() {}
 
 func (x *Fixed64Ignore) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[152]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[143]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6847,54 +6451,10 @@ func (x *Fixed64Ignore) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed64Ignore.ProtoReflect.Descriptor instead.
 func (*Fixed64Ignore) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{152}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{143}
 }
 
 func (x *Fixed64Ignore) GetVal() uint64 {
-	if x != nil {
-		return x.Val
-	}
-	return 0
-}
-
-type Fixed64IncorrectType struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	Val           uint64                 `protobuf:"fixed64,1,opt,name=val,proto3" json:"val,omitempty"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *Fixed64IncorrectType) Reset() {
-	*x = Fixed64IncorrectType{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[153]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *Fixed64IncorrectType) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*Fixed64IncorrectType) ProtoMessage() {}
-
-func (x *Fixed64IncorrectType) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[153]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use Fixed64IncorrectType.ProtoReflect.Descriptor instead.
-func (*Fixed64IncorrectType) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{153}
-}
-
-func (x *Fixed64IncorrectType) GetVal() uint64 {
 	if x != nil {
 		return x.Val
 	}
@@ -6910,7 +6470,7 @@ type Fixed64Example struct {
 
 func (x *Fixed64Example) Reset() {
 	*x = Fixed64Example{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[154]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[144]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6922,7 +6482,7 @@ func (x *Fixed64Example) String() string {
 func (*Fixed64Example) ProtoMessage() {}
 
 func (x *Fixed64Example) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[154]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[144]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6935,7 +6495,7 @@ func (x *Fixed64Example) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Fixed64Example.ProtoReflect.Descriptor instead.
 func (*Fixed64Example) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{154}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{144}
 }
 
 func (x *Fixed64Example) GetVal() uint64 {
@@ -6954,7 +6514,7 @@ type SFixed32None struct {
 
 func (x *SFixed32None) Reset() {
 	*x = SFixed32None{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[155]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[145]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -6966,7 +6526,7 @@ func (x *SFixed32None) String() string {
 func (*SFixed32None) ProtoMessage() {}
 
 func (x *SFixed32None) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[155]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[145]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -6979,7 +6539,7 @@ func (x *SFixed32None) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed32None.ProtoReflect.Descriptor instead.
 func (*SFixed32None) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{155}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{145}
 }
 
 func (x *SFixed32None) GetVal() int32 {
@@ -6998,7 +6558,7 @@ type SFixed32Const struct {
 
 func (x *SFixed32Const) Reset() {
 	*x = SFixed32Const{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[156]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[146]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7010,7 +6570,7 @@ func (x *SFixed32Const) String() string {
 func (*SFixed32Const) ProtoMessage() {}
 
 func (x *SFixed32Const) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[156]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[146]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7023,7 +6583,7 @@ func (x *SFixed32Const) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed32Const.ProtoReflect.Descriptor instead.
 func (*SFixed32Const) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{156}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{146}
 }
 
 func (x *SFixed32Const) GetVal() int32 {
@@ -7042,7 +6602,7 @@ type SFixed32In struct {
 
 func (x *SFixed32In) Reset() {
 	*x = SFixed32In{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[157]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[147]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7054,7 +6614,7 @@ func (x *SFixed32In) String() string {
 func (*SFixed32In) ProtoMessage() {}
 
 func (x *SFixed32In) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[157]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[147]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7067,7 +6627,7 @@ func (x *SFixed32In) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed32In.ProtoReflect.Descriptor instead.
 func (*SFixed32In) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{157}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{147}
 }
 
 func (x *SFixed32In) GetVal() int32 {
@@ -7086,7 +6646,7 @@ type SFixed32NotIn struct {
 
 func (x *SFixed32NotIn) Reset() {
 	*x = SFixed32NotIn{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[158]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[148]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7098,7 +6658,7 @@ func (x *SFixed32NotIn) String() string {
 func (*SFixed32NotIn) ProtoMessage() {}
 
 func (x *SFixed32NotIn) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[158]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[148]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7111,7 +6671,7 @@ func (x *SFixed32NotIn) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed32NotIn.ProtoReflect.Descriptor instead.
 func (*SFixed32NotIn) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{158}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{148}
 }
 
 func (x *SFixed32NotIn) GetVal() int32 {
@@ -7130,7 +6690,7 @@ type SFixed32LT struct {
 
 func (x *SFixed32LT) Reset() {
 	*x = SFixed32LT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[159]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[149]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7142,7 +6702,7 @@ func (x *SFixed32LT) String() string {
 func (*SFixed32LT) ProtoMessage() {}
 
 func (x *SFixed32LT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[159]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[149]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7155,7 +6715,7 @@ func (x *SFixed32LT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed32LT.ProtoReflect.Descriptor instead.
 func (*SFixed32LT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{159}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{149}
 }
 
 func (x *SFixed32LT) GetVal() int32 {
@@ -7174,7 +6734,7 @@ type SFixed32LTE struct {
 
 func (x *SFixed32LTE) Reset() {
 	*x = SFixed32LTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[160]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[150]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7186,7 +6746,7 @@ func (x *SFixed32LTE) String() string {
 func (*SFixed32LTE) ProtoMessage() {}
 
 func (x *SFixed32LTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[160]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[150]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7199,7 +6759,7 @@ func (x *SFixed32LTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed32LTE.ProtoReflect.Descriptor instead.
 func (*SFixed32LTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{160}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{150}
 }
 
 func (x *SFixed32LTE) GetVal() int32 {
@@ -7218,7 +6778,7 @@ type SFixed32GT struct {
 
 func (x *SFixed32GT) Reset() {
 	*x = SFixed32GT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[161]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[151]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7230,7 +6790,7 @@ func (x *SFixed32GT) String() string {
 func (*SFixed32GT) ProtoMessage() {}
 
 func (x *SFixed32GT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[161]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[151]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7243,7 +6803,7 @@ func (x *SFixed32GT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed32GT.ProtoReflect.Descriptor instead.
 func (*SFixed32GT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{161}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{151}
 }
 
 func (x *SFixed32GT) GetVal() int32 {
@@ -7262,7 +6822,7 @@ type SFixed32GTE struct {
 
 func (x *SFixed32GTE) Reset() {
 	*x = SFixed32GTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[162]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[152]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7274,7 +6834,7 @@ func (x *SFixed32GTE) String() string {
 func (*SFixed32GTE) ProtoMessage() {}
 
 func (x *SFixed32GTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[162]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[152]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7287,7 +6847,7 @@ func (x *SFixed32GTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed32GTE.ProtoReflect.Descriptor instead.
 func (*SFixed32GTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{162}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{152}
 }
 
 func (x *SFixed32GTE) GetVal() int32 {
@@ -7306,7 +6866,7 @@ type SFixed32GTLT struct {
 
 func (x *SFixed32GTLT) Reset() {
 	*x = SFixed32GTLT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[163]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[153]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7318,7 +6878,7 @@ func (x *SFixed32GTLT) String() string {
 func (*SFixed32GTLT) ProtoMessage() {}
 
 func (x *SFixed32GTLT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[163]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[153]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7331,7 +6891,7 @@ func (x *SFixed32GTLT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed32GTLT.ProtoReflect.Descriptor instead.
 func (*SFixed32GTLT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{163}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{153}
 }
 
 func (x *SFixed32GTLT) GetVal() int32 {
@@ -7350,7 +6910,7 @@ type SFixed32ExLTGT struct {
 
 func (x *SFixed32ExLTGT) Reset() {
 	*x = SFixed32ExLTGT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[164]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[154]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7362,7 +6922,7 @@ func (x *SFixed32ExLTGT) String() string {
 func (*SFixed32ExLTGT) ProtoMessage() {}
 
 func (x *SFixed32ExLTGT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[164]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[154]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7375,7 +6935,7 @@ func (x *SFixed32ExLTGT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed32ExLTGT.ProtoReflect.Descriptor instead.
 func (*SFixed32ExLTGT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{164}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{154}
 }
 
 func (x *SFixed32ExLTGT) GetVal() int32 {
@@ -7394,7 +6954,7 @@ type SFixed32GTELTE struct {
 
 func (x *SFixed32GTELTE) Reset() {
 	*x = SFixed32GTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[165]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[155]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7406,7 +6966,7 @@ func (x *SFixed32GTELTE) String() string {
 func (*SFixed32GTELTE) ProtoMessage() {}
 
 func (x *SFixed32GTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[165]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[155]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7419,7 +6979,7 @@ func (x *SFixed32GTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed32GTELTE.ProtoReflect.Descriptor instead.
 func (*SFixed32GTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{165}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{155}
 }
 
 func (x *SFixed32GTELTE) GetVal() int32 {
@@ -7438,7 +6998,7 @@ type SFixed32ExGTELTE struct {
 
 func (x *SFixed32ExGTELTE) Reset() {
 	*x = SFixed32ExGTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[166]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[156]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7450,7 +7010,7 @@ func (x *SFixed32ExGTELTE) String() string {
 func (*SFixed32ExGTELTE) ProtoMessage() {}
 
 func (x *SFixed32ExGTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[166]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[156]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7463,7 +7023,7 @@ func (x *SFixed32ExGTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed32ExGTELTE.ProtoReflect.Descriptor instead.
 func (*SFixed32ExGTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{166}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{156}
 }
 
 func (x *SFixed32ExGTELTE) GetVal() int32 {
@@ -7482,7 +7042,7 @@ type SFixed32Ignore struct {
 
 func (x *SFixed32Ignore) Reset() {
 	*x = SFixed32Ignore{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[167]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[157]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7494,7 +7054,7 @@ func (x *SFixed32Ignore) String() string {
 func (*SFixed32Ignore) ProtoMessage() {}
 
 func (x *SFixed32Ignore) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[167]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[157]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7507,54 +7067,10 @@ func (x *SFixed32Ignore) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed32Ignore.ProtoReflect.Descriptor instead.
 func (*SFixed32Ignore) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{167}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{157}
 }
 
 func (x *SFixed32Ignore) GetVal() int32 {
-	if x != nil {
-		return x.Val
-	}
-	return 0
-}
-
-type SFixed32IncorrectType struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	Val           int32                  `protobuf:"fixed32,1,opt,name=val,proto3" json:"val,omitempty"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *SFixed32IncorrectType) Reset() {
-	*x = SFixed32IncorrectType{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[168]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *SFixed32IncorrectType) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*SFixed32IncorrectType) ProtoMessage() {}
-
-func (x *SFixed32IncorrectType) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[168]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use SFixed32IncorrectType.ProtoReflect.Descriptor instead.
-func (*SFixed32IncorrectType) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{168}
-}
-
-func (x *SFixed32IncorrectType) GetVal() int32 {
 	if x != nil {
 		return x.Val
 	}
@@ -7570,7 +7086,7 @@ type SFixed32Example struct {
 
 func (x *SFixed32Example) Reset() {
 	*x = SFixed32Example{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[169]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[158]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7582,7 +7098,7 @@ func (x *SFixed32Example) String() string {
 func (*SFixed32Example) ProtoMessage() {}
 
 func (x *SFixed32Example) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[169]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[158]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7595,7 +7111,7 @@ func (x *SFixed32Example) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed32Example.ProtoReflect.Descriptor instead.
 func (*SFixed32Example) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{169}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{158}
 }
 
 func (x *SFixed32Example) GetVal() int32 {
@@ -7614,7 +7130,7 @@ type SFixed64None struct {
 
 func (x *SFixed64None) Reset() {
 	*x = SFixed64None{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[170]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[159]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7626,7 +7142,7 @@ func (x *SFixed64None) String() string {
 func (*SFixed64None) ProtoMessage() {}
 
 func (x *SFixed64None) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[170]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[159]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7639,7 +7155,7 @@ func (x *SFixed64None) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed64None.ProtoReflect.Descriptor instead.
 func (*SFixed64None) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{170}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{159}
 }
 
 func (x *SFixed64None) GetVal() int64 {
@@ -7658,7 +7174,7 @@ type SFixed64Const struct {
 
 func (x *SFixed64Const) Reset() {
 	*x = SFixed64Const{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[171]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[160]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7670,7 +7186,7 @@ func (x *SFixed64Const) String() string {
 func (*SFixed64Const) ProtoMessage() {}
 
 func (x *SFixed64Const) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[171]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[160]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7683,7 +7199,7 @@ func (x *SFixed64Const) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed64Const.ProtoReflect.Descriptor instead.
 func (*SFixed64Const) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{171}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{160}
 }
 
 func (x *SFixed64Const) GetVal() int64 {
@@ -7702,7 +7218,7 @@ type SFixed64In struct {
 
 func (x *SFixed64In) Reset() {
 	*x = SFixed64In{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[172]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[161]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7714,7 +7230,7 @@ func (x *SFixed64In) String() string {
 func (*SFixed64In) ProtoMessage() {}
 
 func (x *SFixed64In) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[172]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[161]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7727,7 +7243,7 @@ func (x *SFixed64In) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed64In.ProtoReflect.Descriptor instead.
 func (*SFixed64In) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{172}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{161}
 }
 
 func (x *SFixed64In) GetVal() int64 {
@@ -7746,7 +7262,7 @@ type SFixed64NotIn struct {
 
 func (x *SFixed64NotIn) Reset() {
 	*x = SFixed64NotIn{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[173]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[162]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7758,7 +7274,7 @@ func (x *SFixed64NotIn) String() string {
 func (*SFixed64NotIn) ProtoMessage() {}
 
 func (x *SFixed64NotIn) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[173]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[162]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7771,7 +7287,7 @@ func (x *SFixed64NotIn) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed64NotIn.ProtoReflect.Descriptor instead.
 func (*SFixed64NotIn) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{173}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{162}
 }
 
 func (x *SFixed64NotIn) GetVal() int64 {
@@ -7790,7 +7306,7 @@ type SFixed64LT struct {
 
 func (x *SFixed64LT) Reset() {
 	*x = SFixed64LT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[174]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[163]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7802,7 +7318,7 @@ func (x *SFixed64LT) String() string {
 func (*SFixed64LT) ProtoMessage() {}
 
 func (x *SFixed64LT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[174]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[163]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7815,7 +7331,7 @@ func (x *SFixed64LT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed64LT.ProtoReflect.Descriptor instead.
 func (*SFixed64LT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{174}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{163}
 }
 
 func (x *SFixed64LT) GetVal() int64 {
@@ -7834,7 +7350,7 @@ type SFixed64LTE struct {
 
 func (x *SFixed64LTE) Reset() {
 	*x = SFixed64LTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[175]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[164]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7846,7 +7362,7 @@ func (x *SFixed64LTE) String() string {
 func (*SFixed64LTE) ProtoMessage() {}
 
 func (x *SFixed64LTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[175]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[164]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7859,7 +7375,7 @@ func (x *SFixed64LTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed64LTE.ProtoReflect.Descriptor instead.
 func (*SFixed64LTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{175}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{164}
 }
 
 func (x *SFixed64LTE) GetVal() int64 {
@@ -7878,7 +7394,7 @@ type SFixed64GT struct {
 
 func (x *SFixed64GT) Reset() {
 	*x = SFixed64GT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[176]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[165]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7890,7 +7406,7 @@ func (x *SFixed64GT) String() string {
 func (*SFixed64GT) ProtoMessage() {}
 
 func (x *SFixed64GT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[176]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[165]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7903,7 +7419,7 @@ func (x *SFixed64GT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed64GT.ProtoReflect.Descriptor instead.
 func (*SFixed64GT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{176}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{165}
 }
 
 func (x *SFixed64GT) GetVal() int64 {
@@ -7922,7 +7438,7 @@ type SFixed64GTE struct {
 
 func (x *SFixed64GTE) Reset() {
 	*x = SFixed64GTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[177]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[166]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7934,7 +7450,7 @@ func (x *SFixed64GTE) String() string {
 func (*SFixed64GTE) ProtoMessage() {}
 
 func (x *SFixed64GTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[177]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[166]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7947,7 +7463,7 @@ func (x *SFixed64GTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed64GTE.ProtoReflect.Descriptor instead.
 func (*SFixed64GTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{177}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{166}
 }
 
 func (x *SFixed64GTE) GetVal() int64 {
@@ -7966,7 +7482,7 @@ type SFixed64GTLT struct {
 
 func (x *SFixed64GTLT) Reset() {
 	*x = SFixed64GTLT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[178]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[167]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -7978,7 +7494,7 @@ func (x *SFixed64GTLT) String() string {
 func (*SFixed64GTLT) ProtoMessage() {}
 
 func (x *SFixed64GTLT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[178]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[167]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -7991,7 +7507,7 @@ func (x *SFixed64GTLT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed64GTLT.ProtoReflect.Descriptor instead.
 func (*SFixed64GTLT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{178}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{167}
 }
 
 func (x *SFixed64GTLT) GetVal() int64 {
@@ -8010,7 +7526,7 @@ type SFixed64ExLTGT struct {
 
 func (x *SFixed64ExLTGT) Reset() {
 	*x = SFixed64ExLTGT{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[179]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[168]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8022,7 +7538,7 @@ func (x *SFixed64ExLTGT) String() string {
 func (*SFixed64ExLTGT) ProtoMessage() {}
 
 func (x *SFixed64ExLTGT) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[179]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[168]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8035,7 +7551,7 @@ func (x *SFixed64ExLTGT) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed64ExLTGT.ProtoReflect.Descriptor instead.
 func (*SFixed64ExLTGT) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{179}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{168}
 }
 
 func (x *SFixed64ExLTGT) GetVal() int64 {
@@ -8054,7 +7570,7 @@ type SFixed64GTELTE struct {
 
 func (x *SFixed64GTELTE) Reset() {
 	*x = SFixed64GTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[180]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[169]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8066,7 +7582,7 @@ func (x *SFixed64GTELTE) String() string {
 func (*SFixed64GTELTE) ProtoMessage() {}
 
 func (x *SFixed64GTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[180]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[169]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8079,7 +7595,7 @@ func (x *SFixed64GTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed64GTELTE.ProtoReflect.Descriptor instead.
 func (*SFixed64GTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{180}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{169}
 }
 
 func (x *SFixed64GTELTE) GetVal() int64 {
@@ -8098,7 +7614,7 @@ type SFixed64ExGTELTE struct {
 
 func (x *SFixed64ExGTELTE) Reset() {
 	*x = SFixed64ExGTELTE{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[181]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[170]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8110,7 +7626,7 @@ func (x *SFixed64ExGTELTE) String() string {
 func (*SFixed64ExGTELTE) ProtoMessage() {}
 
 func (x *SFixed64ExGTELTE) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[181]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[170]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8123,7 +7639,7 @@ func (x *SFixed64ExGTELTE) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed64ExGTELTE.ProtoReflect.Descriptor instead.
 func (*SFixed64ExGTELTE) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{181}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{170}
 }
 
 func (x *SFixed64ExGTELTE) GetVal() int64 {
@@ -8142,7 +7658,7 @@ type SFixed64Ignore struct {
 
 func (x *SFixed64Ignore) Reset() {
 	*x = SFixed64Ignore{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[182]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[171]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8154,7 +7670,7 @@ func (x *SFixed64Ignore) String() string {
 func (*SFixed64Ignore) ProtoMessage() {}
 
 func (x *SFixed64Ignore) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[182]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[171]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8167,54 +7683,10 @@ func (x *SFixed64Ignore) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed64Ignore.ProtoReflect.Descriptor instead.
 func (*SFixed64Ignore) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{182}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{171}
 }
 
 func (x *SFixed64Ignore) GetVal() int64 {
-	if x != nil {
-		return x.Val
-	}
-	return 0
-}
-
-type SFixed64IncorrectType struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	Val           int64                  `protobuf:"fixed64,1,opt,name=val,proto3" json:"val,omitempty"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *SFixed64IncorrectType) Reset() {
-	*x = SFixed64IncorrectType{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[183]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *SFixed64IncorrectType) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*SFixed64IncorrectType) ProtoMessage() {}
-
-func (x *SFixed64IncorrectType) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[183]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use SFixed64IncorrectType.ProtoReflect.Descriptor instead.
-func (*SFixed64IncorrectType) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{183}
-}
-
-func (x *SFixed64IncorrectType) GetVal() int64 {
 	if x != nil {
 		return x.Val
 	}
@@ -8230,7 +7702,7 @@ type SFixed64Example struct {
 
 func (x *SFixed64Example) Reset() {
 	*x = SFixed64Example{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[184]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[172]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8242,7 +7714,7 @@ func (x *SFixed64Example) String() string {
 func (*SFixed64Example) ProtoMessage() {}
 
 func (x *SFixed64Example) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[184]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[172]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8255,7 +7727,7 @@ func (x *SFixed64Example) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SFixed64Example.ProtoReflect.Descriptor instead.
 func (*SFixed64Example) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{184}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{172}
 }
 
 func (x *SFixed64Example) GetVal() int64 {
@@ -8274,7 +7746,7 @@ type Int64LTEOptional struct {
 
 func (x *Int64LTEOptional) Reset() {
 	*x = Int64LTEOptional{}
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[185]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[173]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -8286,7 +7758,7 @@ func (x *Int64LTEOptional) String() string {
 func (*Int64LTEOptional) ProtoMessage() {}
 
 func (x *Int64LTEOptional) ProtoReflect() protoreflect.Message {
-	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[185]
+	mi := &file_buf_validate_conformance_cases_numbers_proto_msgTypes[173]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -8299,7 +7771,7 @@ func (x *Int64LTEOptional) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Int64LTEOptional.ProtoReflect.Descriptor instead.
 func (*Int64LTEOptional) Descriptor() ([]byte, []int) {
-	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{185}
+	return file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP(), []int{173}
 }
 
 func (x *Int64LTEOptional) GetVal() int64 {
@@ -8371,9 +7843,7 @@ const file_buf_validate_conformance_cases_numbers_proto_rawDesc = "" +
 	"\vFloatIgnore\x12$\n" +
 	"\x03val\x18\x01 \x01(\x02B\x12\xbaH\x0f\xd8\x01\x01\n" +
 	"\n" +
-	"\x1d\x00\x00\x80C-\x00\x00\x00CR\x03val\"6\n" +
-	"\x12FloatIncorrectType\x12 \n" +
-	"\x03val\x18\x01 \x01(\x02B\x0e\xbaH\v\x12\t!\x00\x00\x00\x00\x00\x00\x00\x00R\x03val\",\n" +
+	"\x1d\x00\x00\x80C-\x00\x00\x00CR\x03val\",\n" +
 	"\fFloatExample\x12\x1c\n" +
 	"\x03val\x18\x01 \x01(\x02B\n" +
 	"\xbaH\a\n" +
@@ -8410,11 +7880,7 @@ const file_buf_validate_conformance_cases_numbers_proto_rawDesc = "" +
 	"\x0fDoubleNotFinite\x12\x19\n" +
 	"\x03val\x18\x01 \x01(\x01B\a\xbaH\x04\x12\x02@\x00R\x03val\"<\n" +
 	"\fDoubleIgnore\x12,\n" +
-	"\x03val\x18\x01 \x01(\x01B\x1a\xbaH\x17\xd8\x01\x01\x12\x12\x19\x00\x00\x00\x00\x00\x00p@)\x00\x00\x00\x00\x00\x00`@R\x03val\"3\n" +
-	"\x13DoubleIncorrectType\x12\x1c\n" +
-	"\x03val\x18\x01 \x01(\x01B\n" +
-	"\xbaH\a\n" +
-	"\x05%\x00\x00\x00\x00R\x03val\"1\n" +
+	"\x03val\x18\x01 \x01(\x01B\x1a\xbaH\x17\xd8\x01\x01\x12\x12\x19\x00\x00\x00\x00\x00\x00p@)\x00\x00\x00\x00\x00\x00`@R\x03val\"1\n" +
 	"\rDoubleExample\x12 \n" +
 	"\x03val\x18\x01 \x01(\x01B\x0e\xbaH\v\x12\tI\x00\x00\x00\x00\x00\x00\x00\x00R\x03val\"\x1d\n" +
 	"\tInt32None\x12\x10\n" +
@@ -8446,11 +7912,7 @@ const file_buf_validate_conformance_cases_numbers_proto_rawDesc = "" +
 	"\rInt32ExGTELTE\x12\x1d\n" +
 	"\x03val\x18\x01 \x01(\x05B\v\xbaH\b\x1a\x06\x18\x80\x01(\x80\x02R\x03val\"/\n" +
 	"\vInt32Ignore\x12 \n" +
-	"\x03val\x18\x01 \x01(\x05B\x0e\xbaH\v\xd8\x01\x01\x1a\x06\x18\x80\x02(\x80\x01R\x03val\"2\n" +
-	"\x12Int32IncorrectType\x12\x1c\n" +
-	"\x03val\x18\x01 \x01(\x05B\n" +
-	"\xbaH\a\n" +
-	"\x05%\x00\x00\x00\x00R\x03val\")\n" +
+	"\x03val\x18\x01 \x01(\x05B\x0e\xbaH\v\xd8\x01\x01\x1a\x06\x18\x80\x02(\x80\x01R\x03val\")\n" +
 	"\fInt32Example\x12\x19\n" +
 	"\x03val\x18\x01 \x01(\x05B\a\xbaH\x04\x1a\x02@\n" +
 	"R\x03val\"\x1d\n" +
@@ -8497,11 +7959,7 @@ const file_buf_validate_conformance_cases_numbers_proto_rawDesc = "" +
 	"\fconstant_neg\x18\n" +
 	" \x01(\x03B\x10\xbaH\r\"\v\bڢ\xf8\xdb\xeb\xff\xff\xff\xff\x01R\vconstantNeg\x12&\n" +
 	"\x02in\x18\v \x01(\x03B\x16\xbaH\x13\"\x110\xa6݇\xa4\x140ڢ\xf8\xdb\xeb\xff\xff\xff\xff\x01R\x02in\x12,\n" +
-	"\x05notin\x18\f \x01(\x03B\x16\xbaH\x13\"\x118\xa6݇\xa4\x148ڢ\xf8\xdb\xeb\xff\xff\xff\xff\x01R\x05notin\"2\n" +
-	"\x12Int64IncorrectType\x12\x1c\n" +
-	"\x03val\x18\x01 \x01(\x03B\n" +
-	"\xbaH\a\n" +
-	"\x05%\x00\x00\x00\x00R\x03val\")\n" +
+	"\x05notin\x18\f \x01(\x03B\x16\xbaH\x13\"\x118\xa6݇\xa4\x148ڢ\xf8\xdb\xeb\xff\xff\xff\xff\x01R\x05notin\")\n" +
 	"\fInt64Example\x12\x19\n" +
 	"\x03val\x18\x01 \x01(\x03B\a\xbaH\x04\"\x02H\n" +
 	"R\x03val\"\x1e\n" +
@@ -8534,11 +7992,7 @@ const file_buf_validate_conformance_cases_numbers_proto_rawDesc = "" +
 	"\x0eUInt32ExGTELTE\x12\x1d\n" +
 	"\x03val\x18\x01 \x01(\rB\v\xbaH\b*\x06\x18\x80\x01(\x80\x02R\x03val\"0\n" +
 	"\fUInt32Ignore\x12 \n" +
-	"\x03val\x18\x01 \x01(\rB\x0e\xbaH\v\xd8\x01\x01*\x06\x18\x80\x02(\x80\x01R\x03val\"3\n" +
-	"\x13UInt32IncorrectType\x12\x1c\n" +
-	"\x03val\x18\x01 \x01(\rB\n" +
-	"\xbaH\a\n" +
-	"\x05%\x00\x00\x00\x00R\x03val\"*\n" +
+	"\x03val\x18\x01 \x01(\rB\x0e\xbaH\v\xd8\x01\x01*\x06\x18\x80\x02(\x80\x01R\x03val\"*\n" +
 	"\rUInt32Example\x12\x19\n" +
 	"\x03val\x18\x01 \x01(\rB\a\xbaH\x04*\x02@\x00R\x03val\"\x1e\n" +
 	"\n" +
@@ -8570,11 +8024,7 @@ const file_buf_validate_conformance_cases_numbers_proto_rawDesc = "" +
 	"\x0eUInt64ExGTELTE\x12\x1d\n" +
 	"\x03val\x18\x01 \x01(\x04B\v\xbaH\b2\x06\x18\x80\x01(\x80\x02R\x03val\"0\n" +
 	"\fUInt64Ignore\x12 \n" +
-	"\x03val\x18\x01 \x01(\x04B\x0e\xbaH\v\xd8\x01\x012\x06\x18\x80\x02(\x80\x01R\x03val\"3\n" +
-	"\x13UInt64IncorrectType\x12\x1c\n" +
-	"\x03val\x18\x01 \x01(\x04B\n" +
-	"\xbaH\a\n" +
-	"\x05%\x00\x00\x00\x00R\x03val\"*\n" +
+	"\x03val\x18\x01 \x01(\x04B\x0e\xbaH\v\xd8\x01\x012\x06\x18\x80\x02(\x80\x01R\x03val\"*\n" +
 	"\rUInt64Example\x12\x19\n" +
 	"\x03val\x18\x01 \x01(\x04B\a\xbaH\x042\x02@\x00R\x03val\"\x1e\n" +
 	"\n" +
@@ -8604,11 +8054,7 @@ const file_buf_validate_conformance_cases_numbers_proto_rawDesc = "" +
 	"\x0eSInt32ExGTELTE\x12\x1d\n" +
 	"\x03val\x18\x01 \x01(\x11B\v\xbaH\b:\x06\x18\x80\x02(\x80\x04R\x03val\"0\n" +
 	"\fSInt32Ignore\x12 \n" +
-	"\x03val\x18\x01 \x01(\x11B\x0e\xbaH\v\xd8\x01\x01:\x06\x18\x80\x04(\x80\x02R\x03val\"3\n" +
-	"\x13SInt32IncorrectType\x12\x1c\n" +
-	"\x03val\x18\x01 \x01(\x11B\n" +
-	"\xbaH\a\n" +
-	"\x05%\x00\x00\x00\x00R\x03val\"*\n" +
+	"\x03val\x18\x01 \x01(\x11B\x0e\xbaH\v\xd8\x01\x01:\x06\x18\x80\x04(\x80\x02R\x03val\"*\n" +
 	"\rSInt32Example\x12\x19\n" +
 	"\x03val\x18\x01 \x01(\x11B\a\xbaH\x04:\x02@\x00R\x03val\"\x1e\n" +
 	"\n" +
@@ -8638,11 +8084,7 @@ const file_buf_validate_conformance_cases_numbers_proto_rawDesc = "" +
 	"\x0eSInt64ExGTELTE\x12\x1d\n" +
 	"\x03val\x18\x01 \x01(\x12B\v\xbaH\bB\x06\x18\x80\x02(\x80\x04R\x03val\"0\n" +
 	"\fSInt64Ignore\x12 \n" +
-	"\x03val\x18\x01 \x01(\x12B\x0e\xbaH\v\xd8\x01\x01B\x06\x18\x80\x04(\x80\x02R\x03val\"3\n" +
-	"\x13SInt64IncorrectType\x12\x1c\n" +
-	"\x03val\x18\x01 \x01(\x12B\n" +
-	"\xbaH\a\n" +
-	"\x05%\x00\x00\x00\x00R\x03val\"*\n" +
+	"\x03val\x18\x01 \x01(\x12B\x0e\xbaH\v\xd8\x01\x01B\x06\x18\x80\x04(\x80\x02R\x03val\"*\n" +
 	"\rSInt64Example\x12\x19\n" +
 	"\x03val\x18\x01 \x01(\x12B\a\xbaH\x04B\x02@\x00R\x03val\"\x1f\n" +
 	"\vFixed32None\x12\x10\n" +
@@ -8686,11 +8128,7 @@ const file_buf_validate_conformance_cases_numbers_proto_rawDesc = "" +
 	"\x1d\x80\x00\x00\x00-\x00\x01\x00\x00R\x03val\"5\n" +
 	"\rFixed32Ignore\x12$\n" +
 	"\x03val\x18\x01 \x01(\aB\x12\xbaH\x0f\xd8\x01\x01J\n" +
-	"\x1d\x00\x01\x00\x00-\x80\x00\x00\x00R\x03val\"4\n" +
-	"\x14Fixed32IncorrectType\x12\x1c\n" +
-	"\x03val\x18\x01 \x01(\aB\n" +
-	"\xbaH\a\n" +
-	"\x05%\x00\x00\x00\x00R\x03val\".\n" +
+	"\x1d\x00\x01\x00\x00-\x80\x00\x00\x00R\x03val\".\n" +
 	"\x0eFixed32Example\x12\x1c\n" +
 	"\x03val\x18\x01 \x01(\aB\n" +
 	"\xbaH\aJ\x05E\x00\x00\x00\x00R\x03val\"\x1f\n" +
@@ -8723,11 +8161,7 @@ const file_buf_validate_conformance_cases_numbers_proto_rawDesc = "" +
 	"\x0fFixed64ExGTELTE\x12)\n" +
 	"\x03val\x18\x01 \x01(\x06B\x17\xbaH\x14R\x12\x19\x80\x00\x00\x00\x00\x00\x00\x00)\x00\x01\x00\x00\x00\x00\x00\x00R\x03val\"=\n" +
 	"\rFixed64Ignore\x12,\n" +
-	"\x03val\x18\x01 \x01(\x06B\x1a\xbaH\x17\xd8\x01\x01R\x12\x19\x00\x01\x00\x00\x00\x00\x00\x00)\x80\x00\x00\x00\x00\x00\x00\x00R\x03val\"4\n" +
-	"\x14Fixed64IncorrectType\x12\x1c\n" +
-	"\x03val\x18\x01 \x01(\x06B\n" +
-	"\xbaH\a\n" +
-	"\x05%\x00\x00\x00\x00R\x03val\"2\n" +
+	"\x03val\x18\x01 \x01(\x06B\x1a\xbaH\x17\xd8\x01\x01R\x12\x19\x00\x01\x00\x00\x00\x00\x00\x00)\x80\x00\x00\x00\x00\x00\x00\x00R\x03val\"2\n" +
 	"\x0eFixed64Example\x12 \n" +
 	"\x03val\x18\x01 \x01(\x06B\x0e\xbaH\vR\tA\x00\x00\x00\x00\x00\x00\x00\x00R\x03val\" \n" +
 	"\fSFixed32None\x12\x10\n" +
@@ -8772,11 +8206,7 @@ const file_buf_validate_conformance_cases_numbers_proto_rawDesc = "" +
 	"\x1d\x80\x00\x00\x00-\x00\x01\x00\x00R\x03val\"6\n" +
 	"\x0eSFixed32Ignore\x12$\n" +
 	"\x03val\x18\x01 \x01(\x0fB\x12\xbaH\x0f\xd8\x01\x01Z\n" +
-	"\x1d\x00\x01\x00\x00-\x80\x00\x00\x00R\x03val\"5\n" +
-	"\x15SFixed32IncorrectType\x12\x1c\n" +
-	"\x03val\x18\x01 \x01(\x0fB\n" +
-	"\xbaH\a\n" +
-	"\x05%\x00\x00\x00\x00R\x03val\"/\n" +
+	"\x1d\x00\x01\x00\x00-\x80\x00\x00\x00R\x03val\"/\n" +
 	"\x0fSFixed32Example\x12\x1c\n" +
 	"\x03val\x18\x01 \x01(\x0fB\n" +
 	"\xbaH\aZ\x05E\x00\x00\x00\x00R\x03val\" \n" +
@@ -8810,11 +8240,7 @@ const file_buf_validate_conformance_cases_numbers_proto_rawDesc = "" +
 	"\x10SFixed64ExGTELTE\x12)\n" +
 	"\x03val\x18\x01 \x01(\x10B\x17\xbaH\x14b\x12\x19\x80\x00\x00\x00\x00\x00\x00\x00)\x00\x01\x00\x00\x00\x00\x00\x00R\x03val\">\n" +
 	"\x0eSFixed64Ignore\x12,\n" +
-	"\x03val\x18\x01 \x01(\x10B\x1a\xbaH\x17\xd8\x01\x01b\x12\x19\x00\x01\x00\x00\x00\x00\x00\x00)\x80\x00\x00\x00\x00\x00\x00\x00R\x03val\"5\n" +
-	"\x15SFixed64IncorrectType\x12\x1c\n" +
-	"\x03val\x18\x01 \x01(\x10B\n" +
-	"\xbaH\a\n" +
-	"\x05%\x00\x00\x00\x00R\x03val\"3\n" +
+	"\x03val\x18\x01 \x01(\x10B\x1a\xbaH\x17\xd8\x01\x01b\x12\x19\x00\x01\x00\x00\x00\x00\x00\x00)\x80\x00\x00\x00\x00\x00\x00\x00R\x03val\"3\n" +
 	"\x0fSFixed64Example\x12 \n" +
 	"\x03val\x18\x01 \x01(\x10B\x0e\xbaH\vb\tA\x00\x00\x00\x00\x00\x00\x00\x00R\x03val\":\n" +
 	"\x10Int64LTEOptional\x12\x1e\n" +
@@ -8834,194 +8260,182 @@ func file_buf_validate_conformance_cases_numbers_proto_rawDescGZIP() []byte {
 	return file_buf_validate_conformance_cases_numbers_proto_rawDescData
 }
 
-var file_buf_validate_conformance_cases_numbers_proto_msgTypes = make([]protoimpl.MessageInfo, 186)
+var file_buf_validate_conformance_cases_numbers_proto_msgTypes = make([]protoimpl.MessageInfo, 174)
 var file_buf_validate_conformance_cases_numbers_proto_goTypes = []any{
-	(*FloatNone)(nil),             // 0: buf.validate.conformance.cases.FloatNone
-	(*FloatConst)(nil),            // 1: buf.validate.conformance.cases.FloatConst
-	(*FloatIn)(nil),               // 2: buf.validate.conformance.cases.FloatIn
-	(*FloatNotIn)(nil),            // 3: buf.validate.conformance.cases.FloatNotIn
-	(*FloatLT)(nil),               // 4: buf.validate.conformance.cases.FloatLT
-	(*FloatLTE)(nil),              // 5: buf.validate.conformance.cases.FloatLTE
-	(*FloatGT)(nil),               // 6: buf.validate.conformance.cases.FloatGT
-	(*FloatGTE)(nil),              // 7: buf.validate.conformance.cases.FloatGTE
-	(*FloatGTLT)(nil),             // 8: buf.validate.conformance.cases.FloatGTLT
-	(*FloatExLTGT)(nil),           // 9: buf.validate.conformance.cases.FloatExLTGT
-	(*FloatGTELTE)(nil),           // 10: buf.validate.conformance.cases.FloatGTELTE
-	(*FloatExGTELTE)(nil),         // 11: buf.validate.conformance.cases.FloatExGTELTE
-	(*FloatFinite)(nil),           // 12: buf.validate.conformance.cases.FloatFinite
-	(*FloatNotFinite)(nil),        // 13: buf.validate.conformance.cases.FloatNotFinite
-	(*FloatIgnore)(nil),           // 14: buf.validate.conformance.cases.FloatIgnore
-	(*FloatIncorrectType)(nil),    // 15: buf.validate.conformance.cases.FloatIncorrectType
-	(*FloatExample)(nil),          // 16: buf.validate.conformance.cases.FloatExample
-	(*DoubleNone)(nil),            // 17: buf.validate.conformance.cases.DoubleNone
-	(*DoubleConst)(nil),           // 18: buf.validate.conformance.cases.DoubleConst
-	(*DoubleIn)(nil),              // 19: buf.validate.conformance.cases.DoubleIn
-	(*DoubleNotIn)(nil),           // 20: buf.validate.conformance.cases.DoubleNotIn
-	(*DoubleLT)(nil),              // 21: buf.validate.conformance.cases.DoubleLT
-	(*DoubleLTE)(nil),             // 22: buf.validate.conformance.cases.DoubleLTE
-	(*DoubleGT)(nil),              // 23: buf.validate.conformance.cases.DoubleGT
-	(*DoubleGTE)(nil),             // 24: buf.validate.conformance.cases.DoubleGTE
-	(*DoubleGTLT)(nil),            // 25: buf.validate.conformance.cases.DoubleGTLT
-	(*DoubleExLTGT)(nil),          // 26: buf.validate.conformance.cases.DoubleExLTGT
-	(*DoubleGTELTE)(nil),          // 27: buf.validate.conformance.cases.DoubleGTELTE
-	(*DoubleExGTELTE)(nil),        // 28: buf.validate.conformance.cases.DoubleExGTELTE
-	(*DoubleFinite)(nil),          // 29: buf.validate.conformance.cases.DoubleFinite
-	(*DoubleNotFinite)(nil),       // 30: buf.validate.conformance.cases.DoubleNotFinite
-	(*DoubleIgnore)(nil),          // 31: buf.validate.conformance.cases.DoubleIgnore
-	(*DoubleIncorrectType)(nil),   // 32: buf.validate.conformance.cases.DoubleIncorrectType
-	(*DoubleExample)(nil),         // 33: buf.validate.conformance.cases.DoubleExample
-	(*Int32None)(nil),             // 34: buf.validate.conformance.cases.Int32None
-	(*Int32Const)(nil),            // 35: buf.validate.conformance.cases.Int32Const
-	(*Int32In)(nil),               // 36: buf.validate.conformance.cases.Int32In
-	(*Int32NotIn)(nil),            // 37: buf.validate.conformance.cases.Int32NotIn
-	(*Int32LT)(nil),               // 38: buf.validate.conformance.cases.Int32LT
-	(*Int32LTE)(nil),              // 39: buf.validate.conformance.cases.Int32LTE
-	(*Int32GT)(nil),               // 40: buf.validate.conformance.cases.Int32GT
-	(*Int32GTE)(nil),              // 41: buf.validate.conformance.cases.Int32GTE
-	(*Int32GTLT)(nil),             // 42: buf.validate.conformance.cases.Int32GTLT
-	(*Int32ExLTGT)(nil),           // 43: buf.validate.conformance.cases.Int32ExLTGT
-	(*Int32GTELTE)(nil),           // 44: buf.validate.conformance.cases.Int32GTELTE
-	(*Int32ExGTELTE)(nil),         // 45: buf.validate.conformance.cases.Int32ExGTELTE
-	(*Int32Ignore)(nil),           // 46: buf.validate.conformance.cases.Int32Ignore
-	(*Int32IncorrectType)(nil),    // 47: buf.validate.conformance.cases.Int32IncorrectType
-	(*Int32Example)(nil),          // 48: buf.validate.conformance.cases.Int32Example
-	(*Int64None)(nil),             // 49: buf.validate.conformance.cases.Int64None
-	(*Int64Const)(nil),            // 50: buf.validate.conformance.cases.Int64Const
-	(*Int64In)(nil),               // 51: buf.validate.conformance.cases.Int64In
-	(*Int64NotIn)(nil),            // 52: buf.validate.conformance.cases.Int64NotIn
-	(*Int64LT)(nil),               // 53: buf.validate.conformance.cases.Int64LT
-	(*Int64LTE)(nil),              // 54: buf.validate.conformance.cases.Int64LTE
-	(*Int64GT)(nil),               // 55: buf.validate.conformance.cases.Int64GT
-	(*Int64GTE)(nil),              // 56: buf.validate.conformance.cases.Int64GTE
-	(*Int64GTLT)(nil),             // 57: buf.validate.conformance.cases.Int64GTLT
-	(*Int64ExLTGT)(nil),           // 58: buf.validate.conformance.cases.Int64ExLTGT
-	(*Int64GTELTE)(nil),           // 59: buf.validate.conformance.cases.Int64GTELTE
-	(*Int64ExGTELTE)(nil),         // 60: buf.validate.conformance.cases.Int64ExGTELTE
-	(*Int64Ignore)(nil),           // 61: buf.validate.conformance.cases.Int64Ignore
-	(*Int64BigRules)(nil),         // 62: buf.validate.conformance.cases.Int64BigRules
-	(*Int64IncorrectType)(nil),    // 63: buf.validate.conformance.cases.Int64IncorrectType
-	(*Int64Example)(nil),          // 64: buf.validate.conformance.cases.Int64Example
-	(*UInt32None)(nil),            // 65: buf.validate.conformance.cases.UInt32None
-	(*UInt32Const)(nil),           // 66: buf.validate.conformance.cases.UInt32Const
-	(*UInt32In)(nil),              // 67: buf.validate.conformance.cases.UInt32In
-	(*UInt32NotIn)(nil),           // 68: buf.validate.conformance.cases.UInt32NotIn
-	(*UInt32LT)(nil),              // 69: buf.validate.conformance.cases.UInt32LT
-	(*UInt32LTE)(nil),             // 70: buf.validate.conformance.cases.UInt32LTE
-	(*UInt32GT)(nil),              // 71: buf.validate.conformance.cases.UInt32GT
-	(*UInt32GTE)(nil),             // 72: buf.validate.conformance.cases.UInt32GTE
-	(*UInt32GTLT)(nil),            // 73: buf.validate.conformance.cases.UInt32GTLT
-	(*UInt32ExLTGT)(nil),          // 74: buf.validate.conformance.cases.UInt32ExLTGT
-	(*UInt32GTELTE)(nil),          // 75: buf.validate.conformance.cases.UInt32GTELTE
-	(*UInt32ExGTELTE)(nil),        // 76: buf.validate.conformance.cases.UInt32ExGTELTE
-	(*UInt32Ignore)(nil),          // 77: buf.validate.conformance.cases.UInt32Ignore
-	(*UInt32IncorrectType)(nil),   // 78: buf.validate.conformance.cases.UInt32IncorrectType
-	(*UInt32Example)(nil),         // 79: buf.validate.conformance.cases.UInt32Example
-	(*UInt64None)(nil),            // 80: buf.validate.conformance.cases.UInt64None
-	(*UInt64Const)(nil),           // 81: buf.validate.conformance.cases.UInt64Const
-	(*UInt64In)(nil),              // 82: buf.validate.conformance.cases.UInt64In
-	(*UInt64NotIn)(nil),           // 83: buf.validate.conformance.cases.UInt64NotIn
-	(*UInt64LT)(nil),              // 84: buf.validate.conformance.cases.UInt64LT
-	(*UInt64LTE)(nil),             // 85: buf.validate.conformance.cases.UInt64LTE
-	(*UInt64GT)(nil),              // 86: buf.validate.conformance.cases.UInt64GT
-	(*UInt64GTE)(nil),             // 87: buf.validate.conformance.cases.UInt64GTE
-	(*UInt64GTLT)(nil),            // 88: buf.validate.conformance.cases.UInt64GTLT
-	(*UInt64ExLTGT)(nil),          // 89: buf.validate.conformance.cases.UInt64ExLTGT
-	(*UInt64GTELTE)(nil),          // 90: buf.validate.conformance.cases.UInt64GTELTE
-	(*UInt64ExGTELTE)(nil),        // 91: buf.validate.conformance.cases.UInt64ExGTELTE
-	(*UInt64Ignore)(nil),          // 92: buf.validate.conformance.cases.UInt64Ignore
-	(*UInt64IncorrectType)(nil),   // 93: buf.validate.conformance.cases.UInt64IncorrectType
-	(*UInt64Example)(nil),         // 94: buf.validate.conformance.cases.UInt64Example
-	(*SInt32None)(nil),            // 95: buf.validate.conformance.cases.SInt32None
-	(*SInt32Const)(nil),           // 96: buf.validate.conformance.cases.SInt32Const
-	(*SInt32In)(nil),              // 97: buf.validate.conformance.cases.SInt32In
-	(*SInt32NotIn)(nil),           // 98: buf.validate.conformance.cases.SInt32NotIn
-	(*SInt32LT)(nil),              // 99: buf.validate.conformance.cases.SInt32LT
-	(*SInt32LTE)(nil),             // 100: buf.validate.conformance.cases.SInt32LTE
-	(*SInt32GT)(nil),              // 101: buf.validate.conformance.cases.SInt32GT
-	(*SInt32GTE)(nil),             // 102: buf.validate.conformance.cases.SInt32GTE
-	(*SInt32GTLT)(nil),            // 103: buf.validate.conformance.cases.SInt32GTLT
-	(*SInt32ExLTGT)(nil),          // 104: buf.validate.conformance.cases.SInt32ExLTGT
-	(*SInt32GTELTE)(nil),          // 105: buf.validate.conformance.cases.SInt32GTELTE
-	(*SInt32ExGTELTE)(nil),        // 106: buf.validate.conformance.cases.SInt32ExGTELTE
-	(*SInt32Ignore)(nil),          // 107: buf.validate.conformance.cases.SInt32Ignore
-	(*SInt32IncorrectType)(nil),   // 108: buf.validate.conformance.cases.SInt32IncorrectType
-	(*SInt32Example)(nil),         // 109: buf.validate.conformance.cases.SInt32Example
-	(*SInt64None)(nil),            // 110: buf.validate.conformance.cases.SInt64None
-	(*SInt64Const)(nil),           // 111: buf.validate.conformance.cases.SInt64Const
-	(*SInt64In)(nil),              // 112: buf.validate.conformance.cases.SInt64In
-	(*SInt64NotIn)(nil),           // 113: buf.validate.conformance.cases.SInt64NotIn
-	(*SInt64LT)(nil),              // 114: buf.validate.conformance.cases.SInt64LT
-	(*SInt64LTE)(nil),             // 115: buf.validate.conformance.cases.SInt64LTE
-	(*SInt64GT)(nil),              // 116: buf.validate.conformance.cases.SInt64GT
-	(*SInt64GTE)(nil),             // 117: buf.validate.conformance.cases.SInt64GTE
-	(*SInt64GTLT)(nil),            // 118: buf.validate.conformance.cases.SInt64GTLT
-	(*SInt64ExLTGT)(nil),          // 119: buf.validate.conformance.cases.SInt64ExLTGT
-	(*SInt64GTELTE)(nil),          // 120: buf.validate.conformance.cases.SInt64GTELTE
-	(*SInt64ExGTELTE)(nil),        // 121: buf.validate.conformance.cases.SInt64ExGTELTE
-	(*SInt64Ignore)(nil),          // 122: buf.validate.conformance.cases.SInt64Ignore
-	(*SInt64IncorrectType)(nil),   // 123: buf.validate.conformance.cases.SInt64IncorrectType
-	(*SInt64Example)(nil),         // 124: buf.validate.conformance.cases.SInt64Example
-	(*Fixed32None)(nil),           // 125: buf.validate.conformance.cases.Fixed32None
-	(*Fixed32Const)(nil),          // 126: buf.validate.conformance.cases.Fixed32Const
-	(*Fixed32In)(nil),             // 127: buf.validate.conformance.cases.Fixed32In
-	(*Fixed32NotIn)(nil),          // 128: buf.validate.conformance.cases.Fixed32NotIn
-	(*Fixed32LT)(nil),             // 129: buf.validate.conformance.cases.Fixed32LT
-	(*Fixed32LTE)(nil),            // 130: buf.validate.conformance.cases.Fixed32LTE
-	(*Fixed32GT)(nil),             // 131: buf.validate.conformance.cases.Fixed32GT
-	(*Fixed32GTE)(nil),            // 132: buf.validate.conformance.cases.Fixed32GTE
-	(*Fixed32GTLT)(nil),           // 133: buf.validate.conformance.cases.Fixed32GTLT
-	(*Fixed32ExLTGT)(nil),         // 134: buf.validate.conformance.cases.Fixed32ExLTGT
-	(*Fixed32GTELTE)(nil),         // 135: buf.validate.conformance.cases.Fixed32GTELTE
-	(*Fixed32ExGTELTE)(nil),       // 136: buf.validate.conformance.cases.Fixed32ExGTELTE
-	(*Fixed32Ignore)(nil),         // 137: buf.validate.conformance.cases.Fixed32Ignore
-	(*Fixed32IncorrectType)(nil),  // 138: buf.validate.conformance.cases.Fixed32IncorrectType
-	(*Fixed32Example)(nil),        // 139: buf.validate.conformance.cases.Fixed32Example
-	(*Fixed64None)(nil),           // 140: buf.validate.conformance.cases.Fixed64None
-	(*Fixed64Const)(nil),          // 141: buf.validate.conformance.cases.Fixed64Const
-	(*Fixed64In)(nil),             // 142: buf.validate.conformance.cases.Fixed64In
-	(*Fixed64NotIn)(nil),          // 143: buf.validate.conformance.cases.Fixed64NotIn
-	(*Fixed64LT)(nil),             // 144: buf.validate.conformance.cases.Fixed64LT
-	(*Fixed64LTE)(nil),            // 145: buf.validate.conformance.cases.Fixed64LTE
-	(*Fixed64GT)(nil),             // 146: buf.validate.conformance.cases.Fixed64GT
-	(*Fixed64GTE)(nil),            // 147: buf.validate.conformance.cases.Fixed64GTE
-	(*Fixed64GTLT)(nil),           // 148: buf.validate.conformance.cases.Fixed64GTLT
-	(*Fixed64ExLTGT)(nil),         // 149: buf.validate.conformance.cases.Fixed64ExLTGT
-	(*Fixed64GTELTE)(nil),         // 150: buf.validate.conformance.cases.Fixed64GTELTE
-	(*Fixed64ExGTELTE)(nil),       // 151: buf.validate.conformance.cases.Fixed64ExGTELTE
-	(*Fixed64Ignore)(nil),         // 152: buf.validate.conformance.cases.Fixed64Ignore
-	(*Fixed64IncorrectType)(nil),  // 153: buf.validate.conformance.cases.Fixed64IncorrectType
-	(*Fixed64Example)(nil),        // 154: buf.validate.conformance.cases.Fixed64Example
-	(*SFixed32None)(nil),          // 155: buf.validate.conformance.cases.SFixed32None
-	(*SFixed32Const)(nil),         // 156: buf.validate.conformance.cases.SFixed32Const
-	(*SFixed32In)(nil),            // 157: buf.validate.conformance.cases.SFixed32In
-	(*SFixed32NotIn)(nil),         // 158: buf.validate.conformance.cases.SFixed32NotIn
-	(*SFixed32LT)(nil),            // 159: buf.validate.conformance.cases.SFixed32LT
-	(*SFixed32LTE)(nil),           // 160: buf.validate.conformance.cases.SFixed32LTE
-	(*SFixed32GT)(nil),            // 161: buf.validate.conformance.cases.SFixed32GT
-	(*SFixed32GTE)(nil),           // 162: buf.validate.conformance.cases.SFixed32GTE
-	(*SFixed32GTLT)(nil),          // 163: buf.validate.conformance.cases.SFixed32GTLT
-	(*SFixed32ExLTGT)(nil),        // 164: buf.validate.conformance.cases.SFixed32ExLTGT
-	(*SFixed32GTELTE)(nil),        // 165: buf.validate.conformance.cases.SFixed32GTELTE
-	(*SFixed32ExGTELTE)(nil),      // 166: buf.validate.conformance.cases.SFixed32ExGTELTE
-	(*SFixed32Ignore)(nil),        // 167: buf.validate.conformance.cases.SFixed32Ignore
-	(*SFixed32IncorrectType)(nil), // 168: buf.validate.conformance.cases.SFixed32IncorrectType
-	(*SFixed32Example)(nil),       // 169: buf.validate.conformance.cases.SFixed32Example
-	(*SFixed64None)(nil),          // 170: buf.validate.conformance.cases.SFixed64None
-	(*SFixed64Const)(nil),         // 171: buf.validate.conformance.cases.SFixed64Const
-	(*SFixed64In)(nil),            // 172: buf.validate.conformance.cases.SFixed64In
-	(*SFixed64NotIn)(nil),         // 173: buf.validate.conformance.cases.SFixed64NotIn
-	(*SFixed64LT)(nil),            // 174: buf.validate.conformance.cases.SFixed64LT
-	(*SFixed64LTE)(nil),           // 175: buf.validate.conformance.cases.SFixed64LTE
-	(*SFixed64GT)(nil),            // 176: buf.validate.conformance.cases.SFixed64GT
-	(*SFixed64GTE)(nil),           // 177: buf.validate.conformance.cases.SFixed64GTE
-	(*SFixed64GTLT)(nil),          // 178: buf.validate.conformance.cases.SFixed64GTLT
-	(*SFixed64ExLTGT)(nil),        // 179: buf.validate.conformance.cases.SFixed64ExLTGT
-	(*SFixed64GTELTE)(nil),        // 180: buf.validate.conformance.cases.SFixed64GTELTE
-	(*SFixed64ExGTELTE)(nil),      // 181: buf.validate.conformance.cases.SFixed64ExGTELTE
-	(*SFixed64Ignore)(nil),        // 182: buf.validate.conformance.cases.SFixed64Ignore
-	(*SFixed64IncorrectType)(nil), // 183: buf.validate.conformance.cases.SFixed64IncorrectType
-	(*SFixed64Example)(nil),       // 184: buf.validate.conformance.cases.SFixed64Example
-	(*Int64LTEOptional)(nil),      // 185: buf.validate.conformance.cases.Int64LTEOptional
+	(*FloatNone)(nil),        // 0: buf.validate.conformance.cases.FloatNone
+	(*FloatConst)(nil),       // 1: buf.validate.conformance.cases.FloatConst
+	(*FloatIn)(nil),          // 2: buf.validate.conformance.cases.FloatIn
+	(*FloatNotIn)(nil),       // 3: buf.validate.conformance.cases.FloatNotIn
+	(*FloatLT)(nil),          // 4: buf.validate.conformance.cases.FloatLT
+	(*FloatLTE)(nil),         // 5: buf.validate.conformance.cases.FloatLTE
+	(*FloatGT)(nil),          // 6: buf.validate.conformance.cases.FloatGT
+	(*FloatGTE)(nil),         // 7: buf.validate.conformance.cases.FloatGTE
+	(*FloatGTLT)(nil),        // 8: buf.validate.conformance.cases.FloatGTLT
+	(*FloatExLTGT)(nil),      // 9: buf.validate.conformance.cases.FloatExLTGT
+	(*FloatGTELTE)(nil),      // 10: buf.validate.conformance.cases.FloatGTELTE
+	(*FloatExGTELTE)(nil),    // 11: buf.validate.conformance.cases.FloatExGTELTE
+	(*FloatFinite)(nil),      // 12: buf.validate.conformance.cases.FloatFinite
+	(*FloatNotFinite)(nil),   // 13: buf.validate.conformance.cases.FloatNotFinite
+	(*FloatIgnore)(nil),      // 14: buf.validate.conformance.cases.FloatIgnore
+	(*FloatExample)(nil),     // 15: buf.validate.conformance.cases.FloatExample
+	(*DoubleNone)(nil),       // 16: buf.validate.conformance.cases.DoubleNone
+	(*DoubleConst)(nil),      // 17: buf.validate.conformance.cases.DoubleConst
+	(*DoubleIn)(nil),         // 18: buf.validate.conformance.cases.DoubleIn
+	(*DoubleNotIn)(nil),      // 19: buf.validate.conformance.cases.DoubleNotIn
+	(*DoubleLT)(nil),         // 20: buf.validate.conformance.cases.DoubleLT
+	(*DoubleLTE)(nil),        // 21: buf.validate.conformance.cases.DoubleLTE
+	(*DoubleGT)(nil),         // 22: buf.validate.conformance.cases.DoubleGT
+	(*DoubleGTE)(nil),        // 23: buf.validate.conformance.cases.DoubleGTE
+	(*DoubleGTLT)(nil),       // 24: buf.validate.conformance.cases.DoubleGTLT
+	(*DoubleExLTGT)(nil),     // 25: buf.validate.conformance.cases.DoubleExLTGT
+	(*DoubleGTELTE)(nil),     // 26: buf.validate.conformance.cases.DoubleGTELTE
+	(*DoubleExGTELTE)(nil),   // 27: buf.validate.conformance.cases.DoubleExGTELTE
+	(*DoubleFinite)(nil),     // 28: buf.validate.conformance.cases.DoubleFinite
+	(*DoubleNotFinite)(nil),  // 29: buf.validate.conformance.cases.DoubleNotFinite
+	(*DoubleIgnore)(nil),     // 30: buf.validate.conformance.cases.DoubleIgnore
+	(*DoubleExample)(nil),    // 31: buf.validate.conformance.cases.DoubleExample
+	(*Int32None)(nil),        // 32: buf.validate.conformance.cases.Int32None
+	(*Int32Const)(nil),       // 33: buf.validate.conformance.cases.Int32Const
+	(*Int32In)(nil),          // 34: buf.validate.conformance.cases.Int32In
+	(*Int32NotIn)(nil),       // 35: buf.validate.conformance.cases.Int32NotIn
+	(*Int32LT)(nil),          // 36: buf.validate.conformance.cases.Int32LT
+	(*Int32LTE)(nil),         // 37: buf.validate.conformance.cases.Int32LTE
+	(*Int32GT)(nil),          // 38: buf.validate.conformance.cases.Int32GT
+	(*Int32GTE)(nil),         // 39: buf.validate.conformance.cases.Int32GTE
+	(*Int32GTLT)(nil),        // 40: buf.validate.conformance.cases.Int32GTLT
+	(*Int32ExLTGT)(nil),      // 41: buf.validate.conformance.cases.Int32ExLTGT
+	(*Int32GTELTE)(nil),      // 42: buf.validate.conformance.cases.Int32GTELTE
+	(*Int32ExGTELTE)(nil),    // 43: buf.validate.conformance.cases.Int32ExGTELTE
+	(*Int32Ignore)(nil),      // 44: buf.validate.conformance.cases.Int32Ignore
+	(*Int32Example)(nil),     // 45: buf.validate.conformance.cases.Int32Example
+	(*Int64None)(nil),        // 46: buf.validate.conformance.cases.Int64None
+	(*Int64Const)(nil),       // 47: buf.validate.conformance.cases.Int64Const
+	(*Int64In)(nil),          // 48: buf.validate.conformance.cases.Int64In
+	(*Int64NotIn)(nil),       // 49: buf.validate.conformance.cases.Int64NotIn
+	(*Int64LT)(nil),          // 50: buf.validate.conformance.cases.Int64LT
+	(*Int64LTE)(nil),         // 51: buf.validate.conformance.cases.Int64LTE
+	(*Int64GT)(nil),          // 52: buf.validate.conformance.cases.Int64GT
+	(*Int64GTE)(nil),         // 53: buf.validate.conformance.cases.Int64GTE
+	(*Int64GTLT)(nil),        // 54: buf.validate.conformance.cases.Int64GTLT
+	(*Int64ExLTGT)(nil),      // 55: buf.validate.conformance.cases.Int64ExLTGT
+	(*Int64GTELTE)(nil),      // 56: buf.validate.conformance.cases.Int64GTELTE
+	(*Int64ExGTELTE)(nil),    // 57: buf.validate.conformance.cases.Int64ExGTELTE
+	(*Int64Ignore)(nil),      // 58: buf.validate.conformance.cases.Int64Ignore
+	(*Int64BigRules)(nil),    // 59: buf.validate.conformance.cases.Int64BigRules
+	(*Int64Example)(nil),     // 60: buf.validate.conformance.cases.Int64Example
+	(*UInt32None)(nil),       // 61: buf.validate.conformance.cases.UInt32None
+	(*UInt32Const)(nil),      // 62: buf.validate.conformance.cases.UInt32Const
+	(*UInt32In)(nil),         // 63: buf.validate.conformance.cases.UInt32In
+	(*UInt32NotIn)(nil),      // 64: buf.validate.conformance.cases.UInt32NotIn
+	(*UInt32LT)(nil),         // 65: buf.validate.conformance.cases.UInt32LT
+	(*UInt32LTE)(nil),        // 66: buf.validate.conformance.cases.UInt32LTE
+	(*UInt32GT)(nil),         // 67: buf.validate.conformance.cases.UInt32GT
+	(*UInt32GTE)(nil),        // 68: buf.validate.conformance.cases.UInt32GTE
+	(*UInt32GTLT)(nil),       // 69: buf.validate.conformance.cases.UInt32GTLT
+	(*UInt32ExLTGT)(nil),     // 70: buf.validate.conformance.cases.UInt32ExLTGT
+	(*UInt32GTELTE)(nil),     // 71: buf.validate.conformance.cases.UInt32GTELTE
+	(*UInt32ExGTELTE)(nil),   // 72: buf.validate.conformance.cases.UInt32ExGTELTE
+	(*UInt32Ignore)(nil),     // 73: buf.validate.conformance.cases.UInt32Ignore
+	(*UInt32Example)(nil),    // 74: buf.validate.conformance.cases.UInt32Example
+	(*UInt64None)(nil),       // 75: buf.validate.conformance.cases.UInt64None
+	(*UInt64Const)(nil),      // 76: buf.validate.conformance.cases.UInt64Const
+	(*UInt64In)(nil),         // 77: buf.validate.conformance.cases.UInt64In
+	(*UInt64NotIn)(nil),      // 78: buf.validate.conformance.cases.UInt64NotIn
+	(*UInt64LT)(nil),         // 79: buf.validate.conformance.cases.UInt64LT
+	(*UInt64LTE)(nil),        // 80: buf.validate.conformance.cases.UInt64LTE
+	(*UInt64GT)(nil),         // 81: buf.validate.conformance.cases.UInt64GT
+	(*UInt64GTE)(nil),        // 82: buf.validate.conformance.cases.UInt64GTE
+	(*UInt64GTLT)(nil),       // 83: buf.validate.conformance.cases.UInt64GTLT
+	(*UInt64ExLTGT)(nil),     // 84: buf.validate.conformance.cases.UInt64ExLTGT
+	(*UInt64GTELTE)(nil),     // 85: buf.validate.conformance.cases.UInt64GTELTE
+	(*UInt64ExGTELTE)(nil),   // 86: buf.validate.conformance.cases.UInt64ExGTELTE
+	(*UInt64Ignore)(nil),     // 87: buf.validate.conformance.cases.UInt64Ignore
+	(*UInt64Example)(nil),    // 88: buf.validate.conformance.cases.UInt64Example
+	(*SInt32None)(nil),       // 89: buf.validate.conformance.cases.SInt32None
+	(*SInt32Const)(nil),      // 90: buf.validate.conformance.cases.SInt32Const
+	(*SInt32In)(nil),         // 91: buf.validate.conformance.cases.SInt32In
+	(*SInt32NotIn)(nil),      // 92: buf.validate.conformance.cases.SInt32NotIn
+	(*SInt32LT)(nil),         // 93: buf.validate.conformance.cases.SInt32LT
+	(*SInt32LTE)(nil),        // 94: buf.validate.conformance.cases.SInt32LTE
+	(*SInt32GT)(nil),         // 95: buf.validate.conformance.cases.SInt32GT
+	(*SInt32GTE)(nil),        // 96: buf.validate.conformance.cases.SInt32GTE
+	(*SInt32GTLT)(nil),       // 97: buf.validate.conformance.cases.SInt32GTLT
+	(*SInt32ExLTGT)(nil),     // 98: buf.validate.conformance.cases.SInt32ExLTGT
+	(*SInt32GTELTE)(nil),     // 99: buf.validate.conformance.cases.SInt32GTELTE
+	(*SInt32ExGTELTE)(nil),   // 100: buf.validate.conformance.cases.SInt32ExGTELTE
+	(*SInt32Ignore)(nil),     // 101: buf.validate.conformance.cases.SInt32Ignore
+	(*SInt32Example)(nil),    // 102: buf.validate.conformance.cases.SInt32Example
+	(*SInt64None)(nil),       // 103: buf.validate.conformance.cases.SInt64None
+	(*SInt64Const)(nil),      // 104: buf.validate.conformance.cases.SInt64Const
+	(*SInt64In)(nil),         // 105: buf.validate.conformance.cases.SInt64In
+	(*SInt64NotIn)(nil),      // 106: buf.validate.conformance.cases.SInt64NotIn
+	(*SInt64LT)(nil),         // 107: buf.validate.conformance.cases.SInt64LT
+	(*SInt64LTE)(nil),        // 108: buf.validate.conformance.cases.SInt64LTE
+	(*SInt64GT)(nil),         // 109: buf.validate.conformance.cases.SInt64GT
+	(*SInt64GTE)(nil),        // 110: buf.validate.conformance.cases.SInt64GTE
+	(*SInt64GTLT)(nil),       // 111: buf.validate.conformance.cases.SInt64GTLT
+	(*SInt64ExLTGT)(nil),     // 112: buf.validate.conformance.cases.SInt64ExLTGT
+	(*SInt64GTELTE)(nil),     // 113: buf.validate.conformance.cases.SInt64GTELTE
+	(*SInt64ExGTELTE)(nil),   // 114: buf.validate.conformance.cases.SInt64ExGTELTE
+	(*SInt64Ignore)(nil),     // 115: buf.validate.conformance.cases.SInt64Ignore
+	(*SInt64Example)(nil),    // 116: buf.validate.conformance.cases.SInt64Example
+	(*Fixed32None)(nil),      // 117: buf.validate.conformance.cases.Fixed32None
+	(*Fixed32Const)(nil),     // 118: buf.validate.conformance.cases.Fixed32Const
+	(*Fixed32In)(nil),        // 119: buf.validate.conformance.cases.Fixed32In
+	(*Fixed32NotIn)(nil),     // 120: buf.validate.conformance.cases.Fixed32NotIn
+	(*Fixed32LT)(nil),        // 121: buf.validate.conformance.cases.Fixed32LT
+	(*Fixed32LTE)(nil),       // 122: buf.validate.conformance.cases.Fixed32LTE
+	(*Fixed32GT)(nil),        // 123: buf.validate.conformance.cases.Fixed32GT
+	(*Fixed32GTE)(nil),       // 124: buf.validate.conformance.cases.Fixed32GTE
+	(*Fixed32GTLT)(nil),      // 125: buf.validate.conformance.cases.Fixed32GTLT
+	(*Fixed32ExLTGT)(nil),    // 126: buf.validate.conformance.cases.Fixed32ExLTGT
+	(*Fixed32GTELTE)(nil),    // 127: buf.validate.conformance.cases.Fixed32GTELTE
+	(*Fixed32ExGTELTE)(nil),  // 128: buf.validate.conformance.cases.Fixed32ExGTELTE
+	(*Fixed32Ignore)(nil),    // 129: buf.validate.conformance.cases.Fixed32Ignore
+	(*Fixed32Example)(nil),   // 130: buf.validate.conformance.cases.Fixed32Example
+	(*Fixed64None)(nil),      // 131: buf.validate.conformance.cases.Fixed64None
+	(*Fixed64Const)(nil),     // 132: buf.validate.conformance.cases.Fixed64Const
+	(*Fixed64In)(nil),        // 133: buf.validate.conformance.cases.Fixed64In
+	(*Fixed64NotIn)(nil),     // 134: buf.validate.conformance.cases.Fixed64NotIn
+	(*Fixed64LT)(nil),        // 135: buf.validate.conformance.cases.Fixed64LT
+	(*Fixed64LTE)(nil),       // 136: buf.validate.conformance.cases.Fixed64LTE
+	(*Fixed64GT)(nil),        // 137: buf.validate.conformance.cases.Fixed64GT
+	(*Fixed64GTE)(nil),       // 138: buf.validate.conformance.cases.Fixed64GTE
+	(*Fixed64GTLT)(nil),      // 139: buf.validate.conformance.cases.Fixed64GTLT
+	(*Fixed64ExLTGT)(nil),    // 140: buf.validate.conformance.cases.Fixed64ExLTGT
+	(*Fixed64GTELTE)(nil),    // 141: buf.validate.conformance.cases.Fixed64GTELTE
+	(*Fixed64ExGTELTE)(nil),  // 142: buf.validate.conformance.cases.Fixed64ExGTELTE
+	(*Fixed64Ignore)(nil),    // 143: buf.validate.conformance.cases.Fixed64Ignore
+	(*Fixed64Example)(nil),   // 144: buf.validate.conformance.cases.Fixed64Example
+	(*SFixed32None)(nil),     // 145: buf.validate.conformance.cases.SFixed32None
+	(*SFixed32Const)(nil),    // 146: buf.validate.conformance.cases.SFixed32Const
+	(*SFixed32In)(nil),       // 147: buf.validate.conformance.cases.SFixed32In
+	(*SFixed32NotIn)(nil),    // 148: buf.validate.conformance.cases.SFixed32NotIn
+	(*SFixed32LT)(nil),       // 149: buf.validate.conformance.cases.SFixed32LT
+	(*SFixed32LTE)(nil),      // 150: buf.validate.conformance.cases.SFixed32LTE
+	(*SFixed32GT)(nil),       // 151: buf.validate.conformance.cases.SFixed32GT
+	(*SFixed32GTE)(nil),      // 152: buf.validate.conformance.cases.SFixed32GTE
+	(*SFixed32GTLT)(nil),     // 153: buf.validate.conformance.cases.SFixed32GTLT
+	(*SFixed32ExLTGT)(nil),   // 154: buf.validate.conformance.cases.SFixed32ExLTGT
+	(*SFixed32GTELTE)(nil),   // 155: buf.validate.conformance.cases.SFixed32GTELTE
+	(*SFixed32ExGTELTE)(nil), // 156: buf.validate.conformance.cases.SFixed32ExGTELTE
+	(*SFixed32Ignore)(nil),   // 157: buf.validate.conformance.cases.SFixed32Ignore
+	(*SFixed32Example)(nil),  // 158: buf.validate.conformance.cases.SFixed32Example
+	(*SFixed64None)(nil),     // 159: buf.validate.conformance.cases.SFixed64None
+	(*SFixed64Const)(nil),    // 160: buf.validate.conformance.cases.SFixed64Const
+	(*SFixed64In)(nil),       // 161: buf.validate.conformance.cases.SFixed64In
+	(*SFixed64NotIn)(nil),    // 162: buf.validate.conformance.cases.SFixed64NotIn
+	(*SFixed64LT)(nil),       // 163: buf.validate.conformance.cases.SFixed64LT
+	(*SFixed64LTE)(nil),      // 164: buf.validate.conformance.cases.SFixed64LTE
+	(*SFixed64GT)(nil),       // 165: buf.validate.conformance.cases.SFixed64GT
+	(*SFixed64GTE)(nil),      // 166: buf.validate.conformance.cases.SFixed64GTE
+	(*SFixed64GTLT)(nil),     // 167: buf.validate.conformance.cases.SFixed64GTLT
+	(*SFixed64ExLTGT)(nil),   // 168: buf.validate.conformance.cases.SFixed64ExLTGT
+	(*SFixed64GTELTE)(nil),   // 169: buf.validate.conformance.cases.SFixed64GTELTE
+	(*SFixed64ExGTELTE)(nil), // 170: buf.validate.conformance.cases.SFixed64ExGTELTE
+	(*SFixed64Ignore)(nil),   // 171: buf.validate.conformance.cases.SFixed64Ignore
+	(*SFixed64Example)(nil),  // 172: buf.validate.conformance.cases.SFixed64Example
+	(*Int64LTEOptional)(nil), // 173: buf.validate.conformance.cases.Int64LTEOptional
 }
 var file_buf_validate_conformance_cases_numbers_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
@@ -9036,14 +8450,14 @@ func file_buf_validate_conformance_cases_numbers_proto_init() {
 	if File_buf_validate_conformance_cases_numbers_proto != nil {
 		return
 	}
-	file_buf_validate_conformance_cases_numbers_proto_msgTypes[185].OneofWrappers = []any{}
+	file_buf_validate_conformance_cases_numbers_proto_msgTypes[173].OneofWrappers = []any{}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: unsafe.Slice(unsafe.StringData(file_buf_validate_conformance_cases_numbers_proto_rawDesc), len(file_buf_validate_conformance_cases_numbers_proto_rawDesc)),
 			NumEnums:      0,
-			NumMessages:   186,
+			NumMessages:   174,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
