@@ -15,6 +15,7 @@
 package main
 
 import (
+	"errors"
 	"log"
 	"os"
 
@@ -42,41 +43,28 @@ func main() {
 		Options: options,
 	}
 
-	exec := func(suiteName string, suite suites.Suite) error {
-		req, err := suite.ToRequestProto(cfg.caseFilter)
-		if err != nil || len(req.GetCases()) == 0 {
-			return err
-		}
-
-		var resp *harness.TestConformanceResponse
-		if len(cfg.cmd) > 0 { // optional with --dump
-			resp, err = runCommand(cfg, req)
-			if err != nil {
-				return err
-			}
-		}
-		res, err := suite.ProcessResults(
-			suiteName,
-			cfg.caseFilter,
-			resp,
-			options,
-			cfg.expectedFailures[suiteName],
-		)
-		if err != nil {
-			return err
-		}
-		res.Fdset = req.GetFdset()
-		resultSet.AddSuite(res, cfg.verbose)
-		return nil
+	runner := &suiteRunner{
+		cfg:            cfg,
+		options:        options,
+		resultSet:      resultSet,
+		reportedSuites: map[string]bool{},
+	}
+	if cfg.reportJSON != "" {
+		runner.report = &results.Report{}
 	}
 
 	if cfg.benchmark > 0 {
 		err = cases.GlobalSuites().
 			Benchmark(cfg.benchmark).
-			Range(cfg.suiteFilter, exec)
+			Range(cfg.suiteFilter, runner.runSuite)
 	} else {
 		err = cases.GlobalSuites().
-			Range(cfg.suiteFilter, exec)
+			Range(cfg.suiteFilter, runner.runSuite)
+	}
+	if runner.report != nil {
+		if reportErr := runner.writeReport(err); reportErr != nil {
+			log.Fatal(errors.Join(err, reportErr))
+		}
 	}
 	if err != nil {
 		log.Fatal(err)
@@ -93,4 +81,93 @@ func main() {
 	}
 
 	os.Exit(int(resultSet.Failures))
+}
+
+type suiteRunner struct {
+	cfg       *config
+	options   *harness.ResultOptions
+	resultSet *results.Set
+	// report is nil without --report_json.
+	report *results.Report
+	// Benchmarks run each suite several times, but the report lists each
+	// suite's test cases once.
+	reportedSuites map[string]bool
+}
+
+// runSuite runs a suite's test cases and adds their results to the result
+// set. If the executor fails, every test case in the suite fails with its
+// error, and the other suites still run. It returns an error only if the
+// suite's test cases can't be built or checked. The report lists the test
+// cases of a suite whose executor failed as not run.
+func (r *suiteRunner) runSuite(suiteName string, suite suites.Suite) error {
+	req, err := suite.ToRequestProto(r.cfg.caseFilter)
+	if err != nil || len(req.GetCases()) == 0 {
+		return err
+	}
+
+	var resp *harness.TestConformanceResponse
+	executorFailed := false
+	if len(r.cfg.cmd) > 0 { // optional with --dump
+		resp, err = runCommand(r.cfg, req)
+		if err != nil {
+			resp = executorFailureResponse(req, err)
+			executorFailed = true
+		}
+	}
+	suiteReport := r.report
+	if executorFailed || r.reportedSuites[suiteName] {
+		suiteReport = nil
+	}
+	res, err := suite.ProcessResults(
+		suiteName,
+		r.cfg.caseFilter,
+		resp,
+		r.options,
+		r.cfg.expectedFailures[suiteName],
+		suiteReport,
+	)
+	if err != nil {
+		return err
+	}
+	if executorFailed && r.report != nil && !r.reportedSuites[suiteName] {
+		for caseName := range req.GetCases() {
+			r.report.AddNotRun(suiteName, caseName)
+		}
+	}
+	r.reportedSuites[suiteName] = true
+	res.Fdset = req.GetFdset()
+	r.resultSet.AddSuite(res, r.cfg.verbose)
+	return nil
+}
+
+// executorFailureResponse returns a response in which every test case of the
+// request has the executor's error.
+func executorFailureResponse(req *harness.TestConformanceRequest, executorErr error) *harness.TestConformanceResponse {
+	resp := &harness.TestConformanceResponse{
+		Results: make(map[string]*harness.TestResult, len(req.GetCases())),
+	}
+	for caseName := range req.GetCases() {
+		resp.Results[caseName] = &harness.TestResult{
+			Result: &harness.TestResult_UnexpectedError{UnexpectedError: executorErr.Error()},
+		}
+	}
+	return resp
+}
+
+// writeReport writes the JSON report. If the run stopped early with runErr,
+// the test cases of the suites that didn't finish are reported as not run.
+func (r *suiteRunner) writeReport(runErr error) error {
+	if runErr != nil {
+		r.report.Error = runErr.Error()
+		_ = cases.GlobalSuites().Range(r.cfg.suiteFilter, func(suiteName string, suite suites.Suite) error {
+			if r.reportedSuites[suiteName] {
+				return nil
+			}
+			return suite.Range(r.cfg.caseFilter, func(caseName string, _ suites.Case) error {
+				r.report.AddNotRun(suiteName, caseName)
+				return nil
+			})
+		})
+	}
+	return r.report.WriteFile(r.cfg.reportJSON)
 }
